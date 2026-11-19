@@ -1,0 +1,83 @@
+/* ============================
+   유정노동법률사무소 - 서브페이지 공통 CSS
+   ============================ */
+
+/* ==================
+   사무소 소개 전용
+   ================== */
+.about-visual {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+.about-visual img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+.about-visual-badge {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(14,35,57,0.9));
+    padding: 40px 28px 28px;
+    color: var(--white);
+}
+.about-visual-badge .ab-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; }
+.about-visual-badge .ab-sub { font-size: 0.85rem; color: rgba(255,255,255,0.7); }
+
+.about-text-content p { font-size: 0.97rem; color: var(--gray-700); line-height: 1.9; margin-bottom: 20px; }
+.about-highlights {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px;
+}
+.highlight-item {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--gray-100); padding: 16px; border-radius: var(--radius);
+}
+.highlight-item i { color: var(--accent); font-size: 1.1rem; }
+.highlight-item span { font-size: 0.9rem; font-weight: 600; color: var(--primary-dark); }
+
+/* ==================
+   숫자 카운터
+   ================== */
+.counter-section { padding: 80px 0; background: var(--primary-dark); }
+.counter-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+.counter-item { text-align: center; padding: 40px 20px; border-right: 1px solid rgba(255,255,255,0.1); }
+.counter-item:last-child { border-right: none; }
+.counter-num { font-size: 3rem; font-weight: 900; color: var(--accent-light); line-height: 1; }
+.counter-plus { font-size: 2rem; font-weight: 700; color: var(--accent-light); }
+.counter-label { display: block; font-size: 0.9rem; color: rgba(255,255,255,0.65); margin-top: 8px; }
+
+/* 히스토리 타임라인 개선 */
+.history-section { padding: 100px 0; }
+.history-section .section-header { margin-bottom: 56px; }
+.timeline-full { position: relative; max-width: 900px; margin: 0 auto; padding: 0 24px; }
+.timeline-full::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: var(--gray-200); transform: translateX(-50%); }
+.tl-item {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+    margin-bottom: 48px; position: relative;
+}
+.tl-item::after {
+    content: ''; position: absolute; left: 50%; top: 6px;
+    width: 14px; height: 14px; border-radius: 50%; background: var(--accent);
+    border: 3px solid var(--white); box-shadow: 0 0 0 3px var(--accent);
+    transform: translateX(-50%);
+}
+.tl-left { text-align: right; padding-right: 24px; }
+.tl-right { padding-left: 24px; }
+.tl-year { font-size: 1.2rem; font-weight: 900; color: var(--accent); }
+.tl-content h4 { font-size: 1rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 8px; }
+.tl-content p { font-size: 0.88rem; color: var(--gray-700); line-height: 1.7; }
+.tl-item.right .tl-left { grid-column: 2; text-align: left; padding-left: 24px; padding-right: 0; }
+.tl-item.right .tl-right { grid-column: 1; grid-row: 1; text-align: right; padding-right: 24px; padding-left: 0; }
+
+@media (max-width: 768px) {
+    .timeline-full::before { left: 16px; transform: none; }
+    .tl-item { grid-template-columns: 1fr; padding-left: 40px; }
+    .tl-item::after { left: 16px; transform: translateX(-50%); }
+    .tl-left, .tl-right { text-align: left; padding: 0; }
+    .tl-item.right .tl-left, .tl-item.right .tl-right { grid-column: auto; grid-row: auto; text-align: left; padding: 0; }
+    .counter-grid { grid-template-columns: repeat(2, 1fr); }
+    .counter-item { border-right: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .about-highlights { grid-template-columns: 1fr; }
+}

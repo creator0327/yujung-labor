@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="naver-site-verification" content="dcb75a116efa452d8e3e484ec9bee3fac7b5ec1a" />
+    <title>구성원 소개 | 유정노동법률사무소</title>
+    <meta name="description" content="유정노동법률사무소 공인노무사 소개. 유상건 대표노무사, 신혜경 노무사(직장내괴롭힘 전문위원), 심상솔 공인노무사. 20년 이상 인사노무 실무 경력.">
+    <meta name="keywords" content="유상건 노무사, 신혜경 노무사, 심상솔 노무사, 공인노무사, 유정노동법률사무소 구성원, 직장내괴롭힘 전문위원, 노무사 소개">
+    <meta name="author" content="유정노동법률사무소">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="유정노동법률사무소">
+    <meta property="og:title" content="구성원 소개 | 유정노동법률사무소">
+    <meta property="og:description" content="유상건·신혜경·심상솔 공인노무사. 20년 이상 현장 경력, 직장내괴롭힘 전문위원, 공기업 채용면접위원 등 검증된 전문가 팀.">
+    <meta property="og:url" content="https://www.yujung-labor.com/members.html">
+    <meta property="og:image" content="images/team-photo.jpg">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- 구조화 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "name": "유정노동법률사무소 구성원 소개",
+      "description": "유정노동법률사무소 소속 공인노무사 소개 페이지",
+      "url": "https://www.yujung-labor.com/members.html",
+      "mainEntity": [
+        {
+          "@type": "Person",
+          "name": "유상건",
+          "jobTitle": "대표 공인노무사",
+          "worksFor": { "@type": "LegalService", "name": "유정노동법률사무소" }
+        },
+        {
+          "@type": "Person",
+          "name": "신혜경",
+          "jobTitle": "공인노무사, 직장내괴롭힘 전문위원",
+          "worksFor": { "@type": "LegalService", "name": "유정노동법률사무소" }
+        },
+        {
+          "@type": "Person",
+          "name": "심상솔",
+          "jobTitle": "공인노무사",
+          "worksFor": { "@type": "LegalService", "name": "유정노동법률사무소" }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        /* 구성원 페이지 전용 추가 스타일 */
+        .member-section-title {
+            font-size: 1.1rem; font-weight: 800; letter-spacing: 2px;
+            color: var(--primary); text-transform: uppercase;
+            padding: 12px 0; border-bottom: 2px solid var(--accent);
+            margin-bottom: 28px; display: flex; align-items: center; gap: 10px;
+        }
+        .member-section-title i { color: var(--accent); }
+
+        .book-list { display: flex; flex-direction: column; gap: 8px; }
+        .book-item { display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: var(--gray-700); padding: 8px 0; border-bottom: 1px solid var(--gray-100); }
+        .book-item:last-child { border-bottom: none; }
+        .book-item i { color: var(--accent); margin-top: 2px; flex-shrink: 0; }
+
+        .spec-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+        .spec-tag { padding: 5px 14px; background: rgba(26,58,92,0.07); color: var(--primary); border-radius: 50px; font-size: 0.8rem; font-weight: 600; border: 1px solid rgba(26,58,92,0.12); }
+
+        .education-item { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--gray-100); font-size: 0.9rem; }
+        .education-item:last-child { border-bottom: none; }
+        .edu-school { font-weight: 700; color: var(--primary-dark); }
+        .edu-major { color: var(--gray-500); font-size: 0.85rem; }
+        .edu-year { min-width: 60px; color: var(--accent); font-weight: 600; font-size: 0.82rem; }
+        .edu-badge { display: inline-block; background: linear-gradient(135deg, #8B0000, #c0392b); color: white; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-left: 8px; }
+
+        .award-list { display: flex; flex-direction: column; gap: 8px; }
+        .award-item { display: flex; align-items: center; gap: 10px; font-size: 0.88rem; color: var(--gray-700); padding: 8px 0; border-bottom: 1px solid var(--gray-100); }
+        .award-item:last-child { border-bottom: none; }
+        .award-item i { color: var(--accent); }
+
+        .member-contact-bar {
+            display: flex; gap: 16px; flex-wrap: wrap;
+            margin-top: 24px; padding-top: 24px;
+            border-top: 1px solid var(--gray-200);
+        }
+        .contact-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--gray-700); }
+        .contact-item i { color: var(--primary); width: 16px; }
+        .contact-item a { color: var(--primary); font-weight: 600; }
+        .contact-item a:hover { color: var(--accent); }
+
+        .shinee-highlight {
+            background: linear-gradient(135deg, rgba(26,58,92,0.04), rgba(200,147,58,0.06));
+            border: 1px solid rgba(200,147,58,0.2);
+            border-radius: var(--radius); padding: 20px 24px; margin-bottom: 20px;
+        }
+        .shinee-highlight .sh-title { font-size: 0.8rem; font-weight: 700; color: var(--accent); letter-spacing: 1px; margin-bottom: 10px; }
+        .shinee-highlight p { font-size: 0.9rem; color: var(--gray-700); line-height: 1.7; }
+        .shinee-highlight strong { color: var(--primary-dark); }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="유정노동법률사무소 로고" class="nav-logo-emblem">
+                <div class="nav-logo-text">
+                    <span class="logo-kr">유정노동법률사무소</span>
+                    <span class="logo-en-full">YUJUNG LABOR LAW FIRM</span>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" class="nav-link">사무소 소개</a></li>
+                <li><a href="members.html" class="nav-link">구성원 소개</a></li>
+                <li><a href="services.html" class="nav-link">업무분야</a></li>
+                <li><a href="location.html" class="nav-link">오시는 길</a></li>
+                <li><a href="consult.html" class="nav-link nav-cta">상담신청</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="메뉴"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- 페이지 히어로 -->
+    <div class="page-hero">
+        <div class="container">
+            <div class="page-hero-tag">MEMBERS</div>
+            <h1 class="page-hero-title">구성원 소개</h1>
+            <p class="page-hero-sub">경험 많은 전문가들이 여러분의 노동 문제를 직접 해결합니다</p>
+            <nav class="breadcrumb">
+                <a href="index.html">홈</a>
+                <span class="separator">›</span>
+                <span class="current">구성원 소개</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 구성원 메인 섹션 -->
+    <section class="members-section">
+        <div class="container">
+
+            <!-- ===== 유상건 대표노무사 ===== -->
+            <div class="member-profile" id="yoo">
+                <div class="member-photo-wrap">
+                    <img src="images/member-yoo.jpg" alt="유상건 대표노무사" class="member-photo">
+                    <div class="member-badge">대표 공인노무사</div>
+                </div>
+                <div class="member-info">
+                    <div class="member-role">REPRESENTATIVE LABOR ATTORNEY</div>
+                    <h2 class="member-name">유 상 건</h2>
+                    <p class="member-name-en">YOU SANG GUN</p>
+                    <p class="member-intro">
+                        노동분쟁 해결과 산업재해 분야의 전문가로, 광주○○물류센터 살인사건 산재승인,
+                        소음성난청 행정소송 승소 등 굵직한 사건들을 처리해온 실력파 노무사입니다.
+                        동국대학교 관광경영·경영학을 전공하고 공인노무사 27기 회장을 역임하며
+                        노동계 네트워크를 구축, 현재는 국민권익위원회 노동법률 전문위원으로도 활동 중입니다.
+                    </p>
+
+                    <div class="member-detail-tabs">
+                        <button class="tab-btn active" data-tab="yoo-career">주요 경력</button>
+                        <button class="tab-btn" data-tab="yoo-cases">주요 사건</button>
+                        <button class="tab-btn" data-tab="yoo-books">저서 · 기고</button>
+                        <button class="tab-btn" data-tab="yoo-edu">학력 · 자격</button>
+                    </div>
+
+                    <!-- 주요 경력 -->
+                    <div class="member-tab-content active" id="yoo-career">
+                        <div class="career-list">
+                            <div class="career-item"><span class="career-period">현재</span><span class="career-desc">유정노동법률사무소 대표노무사</span></div>
+                            <div class="career-item"><span class="career-period">현재</span><span class="career-desc">국민권익위원회 노동법률 전문위원</span></div>
+                            <div class="career-item"><span class="career-period">현재</span><span class="career-desc">서울고등검찰청 검찰시민위원</span></div>
+                            <div class="career-item"><span class="career-period">현재</span><span class="career-desc">한국보육진흥원 법률자문위원</span></div>
+                            <div class="career-item"><span class="career-period">현재</span><span class="career-desc">서울시 민간위탁 수탁자 선정심의위원</span></div>
+                            <div class="career-item"><span class="career-period">현재</span><span class="career-desc">중앙 · 서울노동위원회 국선노무사</span></div>
+                            <div class="career-item"><span class="career-period">현재</span><span class="career-desc">교육부 어린이집 지도점검 자문위원</span></div>
+                            <div class="career-item"><span class="career-period">현재</span><span class="career-desc">서울특별시 마을노무사 · 노동권리보호관</span></div>
+                            <div class="career-item"><span class="career-period">현재</span><span class="career-desc">서울특별시 교육청 노동인권 강사</span></div>
+                            <div class="career-item"><span class="career-period">역임</span><span class="career-desc">공인노무사 27기 회장</span></div>
+                            <div class="career-item"><span class="career-period">역임</span><span class="career-desc">중소벤처기업부 비대면바우처 공급기업 대표</span></div>
+                            <div class="career-item"><span class="career-period">역임</span><span class="career-desc">한국수자원공사, 한국마사회, KOTRA 등 50+ 공기업 채용 면접위원</span></div>
+                        </div>
+                    </div>
+
+                    <!-- 주요 사건 -->
+                    <div class="member-tab-content" id="yoo-cases">
+                        <div class="member-section-title"><i class="fas fa-gavel"></i> 완료 주요 사건</div>
+                        <div class="career-list">
+                            <div class="career-item"><span class="career-period" style="color:#27ae60">승인</span><span class="career-desc">광주○○물류센터 살인사건 산재승인</span></div>
+                            <div class="career-item"><span class="career-period" style="color:#27ae60">승소</span><span class="career-desc">소음성난청 업무관련성 행정소송 승소</span></div>
+                            <div class="career-item"><span class="career-period" style="color:#27ae60">승인</span><span class="career-desc">○○라이더 패혈증 사망 산재승인</span></div>
+                            <div class="career-item"><span class="career-period" style="color:#27ae60">승인</span><span class="career-desc">퇴근 후 심근경색 사망 산재승인</span></div>
+                            <div class="career-item"><span class="career-period" style="color:#27ae60">취소</span><span class="career-desc">○○제철 회전근개 재심사 불승인 취소</span></div>
+                            <div class="career-item"><span class="career-period" style="color:#27ae60">승인</span><span class="career-desc">벌목업 과실치사사건 산재승인</span></div>
+                            <div class="career-item"><span class="career-period" style="color:#27ae60">취소</span><span class="career-desc">용접공 추간판탈출 재심사 불승인 취소</span></div>
+                            <div class="career-item"><span class="career-period" style="color:#27ae60">합의</span><span class="career-desc">○○ 필리핀 해외주재원 쇼크사 합의</span></div>
+                        </div>
+                        <div class="member-section-title" style="margin-top:24px;"><i class="fas fa-spinner"></i> 진행 중 사건</div>
+                        <div class="career-list">
+                            <div class="career-item"><span class="career-period" style="color:var(--accent)">진행중</span><span class="career-desc">한국○○○○공사 자살사건 산재처리</span></div>
+                            <div class="career-item"><span class="career-period" style="color:var(--accent)">진행중</span><span class="career-desc">○○제련소 간암 업무상 질병</span></div>
+                            <div class="career-item"><span class="career-period" style="color:var(--accent)">진행중</span><span class="career-desc">철도공무원 소음성 난청</span></div>
+                            <div class="career-item"><span class="career-period" style="color:var(--accent)">진행중</span><span class="career-desc">○○○○○○ 출퇴근 재해사망</span></div>
+                        </div>
+                    </div>
+
+                    <!-- 저서 기고 -->
+                    <div class="member-tab-content" id="yoo-books">
+                        <div class="book-list">
+                            <div class="book-item"><i class="fas fa-book"></i><span>우리동네 노동상담 (2020) — 서울시 발간</span></div>
+                            <div class="book-item"><i class="fas fa-book"></i><span>우리동네 노동사례집 (2021) — 서울시 발간</span></div>
+                            <div class="book-item"><i class="fas fa-book"></i><span>근로복지공단 직장어린이집 중대재해처벌법 대응매뉴얼 (2022)</span></div>
+                            <div class="book-item"><i class="fas fa-book"></i><span>서울시여성가족재단 어린이집 중대재해 예방 및 대응 (2023)</span></div>
+                            <div class="book-item"><i class="fas fa-book"></i><span>서남권 서울특별시 노동자종합지원센터 상담사례집 (2023)</span></div>
+                            <div class="book-item"><i class="fas fa-book"></i><span>서울특별시 경비노동자 노동권익보호안내서 (2024)</span></div>
+                            <div class="book-item"><i class="fas fa-book"></i><span>교육부 어린이집 지도점검 담당공무원 교육자료 (2025)</span></div>
+                            <div class="book-item"><i class="fas fa-pen"></i><span>내일신문 [일터이야기] 칼럼 기고 · 경향신문 · 중앙일보 노동기사 검수</span></div>
+                        </div>
+                    </div>
+
+                    <!-- 학력 자격 -->
+                    <div class="member-tab-content" id="yoo-edu">
+                        <div class="member-section-title"><i class="fas fa-graduation-cap"></i> 학력</div>
+                        <div class="education-item">
+                            <span class="edu-year">2013</span>
+                            <div>
+                                <div class="edu-school">동국대학교 <span class="edu-badge">졸업</span></div>
+                                <div class="edu-major">관광경영학과 · 경영학과</div>
+                            </div>
+                        </div>
+                        <div class="member-section-title" style="margin-top:24px;"><i class="fas fa-id-card"></i> 자격증</div>
+                        <div class="spec-tags">
+                            <span class="spec-tag">공인노무사 (제27기)</span>
+                            <span class="spec-tag">전문가</span>
+                            <span class="spec-tag">중대재해 예방 전문가</span>
+                        </div>
+                    </div>
+
+                    <div class="member-contact-bar">
+                        <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:010-9846-0609">010-9846-0609</a></div>
+                        <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:doucpla@naver.com">doucpla@naver.com</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== 신혜경 대표노무사 ===== -->
+            <div class="member-profile reverse" id="shin">
+                <div class="member-photo-wrap">
+                    <img src="images/member-shin.jpg" alt="신혜경 대표노무사" class="member-photo">
+                    <div class="member-badge">대표 공인노무사</div>
+                </div>
+                <div class="member-info">
+                    <div class="member-role">REPRESENTATIVE LABOR ATTORNEY</div>
+                    <h2 class="member-name">신 혜 경</h2>
+                    <p class="member-name-en">SHIN HYE KYOUNG</p>
+                    <p class="member-intro">
+                        Citi Bank Korea, GS계열사 등 대기업 인사실무 경험을 쌓은 후 2018년 공인노무사 자격을 취득한
+                        노동법 전문가입니다. 특히 <strong>직장 내 괴롭힘</strong> 분야에서 서울관악지청 판단 전문위원으로 활동하며
+                        탁월한 전문성을 인정받고 있으며, 노동인권 교육 분야에서도 활발히 활동하고 있습니다.
+                    </p>
+
+                    <div class="member-detail-tabs">
+                        <button class="tab-btn active" data-tab="shin-career">주요 경력</button>
+                        <button class="tab-btn" data-tab="shin-spec">전문분야</button>
+                        <button class="tab-btn" data-tab="shin-books">저서 · 활동</button>
+                        <button class="tab-btn" data-tab="shin-edu">학력 · 자격</button>
+                    </div>
+
+                    <!-- 주요 경력 -->
+                    <div class="member-tab-content active" id="shin-career">
+                        <div class="career-list">
+                            <div class="career-item"><span class="career-period">2020~현재</span><span class="career-desc">유정노동법률사무소 대표노무사</span></div>
+                            <div class="career-item"><span class="career-period">2026~현재</span><span class="career-desc">서울지방고용노동청 서울북부지청 정보공개심의회 외부위원</span></div>
+                            <div class="career-item"><span class="career-period">2025~현재</span><span class="career-desc">서울노동권익센터 자문위원</span></div>
+                            <div class="career-item"><span class="career-period">2024~현재</span><span class="career-desc">서울특별시 강동구 노사민정협의회 위원</span></div>
+                            <div class="career-item"><span class="career-period">2024~현재</span><span class="career-desc">서울지방고용노동청 북부지청 신고포상금 지급결정 심의위원</span></div>
+                            <div class="career-item"><span class="career-period">2024~현재</span><span class="career-desc">서울시 노동권리보호관 (노동권익 구제지원 · 중소사업주 컨설팅)</span></div>
+                            <div class="career-item"><span class="career-period">2024~현재</span><span class="career-desc">서울노동권익센터 노동상담위원</span></div>
+                            <div class="career-item"><span class="career-period">2022~현재</span><span class="career-desc">서울특별시 교육청 노동인권 강사</span></div>
+                            <div class="career-item"><span class="career-period">2022~현재</span><span class="career-desc">서울지방고용노동청 북부지청 사회적기업 청문주재원</span></div>
+                            <div class="career-item"><span class="career-period">2021~현재</span><span class="career-desc">서울관악지청 직장 내 괴롭힘 판단 전문위원</span></div>
+                            <div class="career-item"><span class="career-period">2022~2023</span><span class="career-desc">서남권 서울특별시 노동자종합지원센터 노동상담위원</span></div>
+                            <div class="career-item"><span class="career-period">2020~2023</span><span class="career-desc">동남권 서울특별시 노동자종합지원센터 노동상담위원</span></div>
+                            <div class="career-item"><span class="career-period">이전</span><span class="career-desc">Citi Bank Korea 인사팀 근무</span></div>
+                            <div class="career-item"><span class="career-period">이전</span><span class="career-desc">GS계열사 인사실무 근무</span></div>
+                            <div class="career-item"><span class="career-period">이전</span><span class="career-desc">외국계 기업 인사담당 실무 경험</span></div>
+                        </div>
+                    </div>
+
+                    <!-- 전문 분야 -->
+                    <div class="member-tab-content" id="shin-spec">
+                        <div class="shinee-highlight">
+                            <div class="sh-title">✦ 직장 내 괴롭힘 전문위원</div>
+                            <p>서울관악지청 직장 내 괴롭힘 <strong>판단 전문위원</strong>으로 실제 사건을 조사·판단하는 경험을 갖추고 있어, 기업의 예방체계 구축부터 사건 처리까지 현장 경험 기반의 전문 서비스를 제공합니다.</p>
+                        </div>
+                        <div class="shinee-highlight">
+                            <div class="sh-title">✦ 노동인권 교육 전문가</div>
+                            <p>서울시 교육청 공식 <strong>노동인권 강사</strong>로서 중고등학교 학생, 기업 임직원, 공공기관 종사자 등을 대상으로 노동법률 교육을 진행합니다.</p>
+                        </div>
+                        <div class="spec-tags">
+                            <span class="spec-tag">직장 내 괴롭힘</span>
+                            <span class="spec-tag">노동인권 교육</span>
+                            <span class="spec-tag">노동상담</span>
+                            <span class="spec-tag">인사노무 컨설팅</span>
+                            <span class="spec-tag">임금·근로조건</span>
+                            <span class="spec-tag">사회적기업 지원</span>
+                            <span class="spec-tag">노동권리보호</span>
+                        </div>
+                    </div>
+
+                    <!-- 저서 활동 -->
+                    <div class="member-tab-content" id="shin-books">
+                        <div class="book-list">
+                            <div class="book-item"><i class="fas fa-book"></i><span>서울시 아파트 경비노동자 권리보호를 위한 안내서 · 가이드북 (2024) — 서남권 서울특별시 노동자종합지원센터</span></div>
+                            <div class="book-item"><i class="fas fa-book"></i><span>서울특별시 노동자종합지원센터 상담사례집 (2023)</span></div>
+                            <div class="book-item"><i class="fas fa-book"></i><span>서울시 우리동네 노동사례집 (2021, 2022)</span></div>
+                            <div class="book-item"><i class="fas fa-pen"></i><span>노무사 수임료 아끼는 진정서 작성방법 (전자책, 2020)</span></div>
+                        </div>
+                        <div class="member-section-title" style="margin-top:24px;"><i class="fas fa-chalkboard-teacher"></i> 주요 강의 활동</div>
+                        <div class="career-list">
+                            <div class="career-item"><span class="career-period">계속</span><span class="career-desc">서울특별시 교육청 노동인권 강사 (중고등학교)</span></div>
+                            <div class="career-item"><span class="career-period">계속</span><span class="career-desc">50개 이상 공기업 채용 면접관 · 평가위원<span class="career-tag">한국수자원공사 · 한국장애인고용공단 · 강원랜드 · 한국공항공사 등</span></span></div>
+                        </div>
+                    </div>
+
+                    <!-- 학력 자격 -->
+                    <div class="member-tab-content" id="shin-edu">
+                        <div class="member-section-title"><i class="fas fa-graduation-cap"></i> 학력</div>
+                        <div class="career-list">
+                            <div class="career-item"><span class="career-period">대학교</span><span class="career-desc edu-school">학사 졸업</span></div>
+                        </div>
+                        <div class="member-section-title" style="margin-top:24px;"><i class="fas fa-id-card"></i> 자격증</div>
+                        <div class="spec-tags">
+                            <span class="spec-tag">공인노무사 (2018년 취득)</span>
+                            <span class="spec-tag">직장 내 괴롭힘 전문위원</span>
+                            <span class="spec-tag">노동인권 교육 강사</span>
+                        </div>
+                        <div class="member-section-title" style="margin-top:24px;"><i class="fas fa-trophy"></i> 수상</div>
+                        <div class="award-list">
+                            <div class="award-item"><i class="fas fa-award"></i><span>서울특별시의회 의장 표창장</span></div>
+                        </div>
+                    </div>
+
+                    <div class="member-contact-bar">
+                        <div class="contact-item"><i class="fas fa-phone"></i><a href="tel:010-2828-1737">010-2828-1737</a></div>
+                        <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:creator0327@naver.com">creator0327@naver.com</a></div>
+                        <div class="contact-item"><i class="fab fa-blogger-b"></i><a href="https://blog.naver.com/creator0327" target="_blank">블로그 바로가기</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== 심상솔 공인노무사 ===== -->
+            <div class="member-profile" id="sim">
+                <div class="member-photo-wrap">
+                    <img src="images/member-shim.jpg" alt="심상솔 공인노무사" class="member-photo">
+                    <div class="member-badge">공인노무사</div>
+                </div>
+                <div class="member-info">
+                    <div class="member-role">CERTIFIED LABOR ATTORNEY</div>
+                    <h2 class="member-name">심 상 솔</h2>
+                    <p class="member-name-en">SHIM SANG SOL</p>
+                    <p class="member-intro">
+                        대한민국 최고 명문 <strong>서울대학교</strong>를 졸업한 신진 공인노무사입니다.
+                        한영외국어고등학교 출신으로 탁월한 학문적 역량과 뛰어난 언어능력을 갖추고 있습니다.
+                        젊은 에너지와 최신 노동법 이론을 겸비하여 유정노동법률사무소의 새로운 성장 동력이 되고 있습니다.
+                    </p>
+
+                    <div class="shinee-highlight">
+                        <div class="sh-title">✦ 학력 하이라이트</div>
+                        <p><strong>서울대학교</strong> 졸업 — 대한민국 최고 명문대학으로, 최상위 학문적 역량을 보유하고 있습니다.</p>
+                        <p style="margin-top:8px;"><strong>한영외국어고등학교</strong> 졸업 — 전국 최고 수준의 외국어고등학교로, 우수한 외국어 능력과 국제감각을 갖추고 있습니다.</p>
+                    </div>
+
+                    <div class="member-detail-tabs">
+                        <button class="tab-btn active" data-tab="sim-edu">학력 · 자격</button>
+                        <button class="tab-btn" data-tab="sim-spec">전문분야</button>
+                    </div>
+
+                    <!-- 학력 자격 -->
+                    <div class="member-tab-content active" id="sim-edu">
+                        <div class="member-section-title"><i class="fas fa-graduation-cap"></i> 학력</div>
+                        <div class="education-item">
+                            <span class="edu-year">졸업</span>
+                            <div>
+                                <div class="edu-school">서울대학교</div>
+                                <div class="edu-major">공인노무사 전문 과정 이수</div>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <span class="edu-year">졸업</span>
+                            <div>
+                                <div class="edu-school">한영외국어고등학교</div>
+                                <div class="edu-major">외국어 전공 — 우수한 외국어 능력 보유</div>
+                            </div>
+                        </div>
+                        <div class="member-section-title" style="margin-top:24px;"><i class="fas fa-id-card"></i> 자격증</div>
+                        <div class="spec-tags">
+                            <span class="spec-tag">공인노무사</span>
+                            <span class="spec-tag">서울대학교 졸업</span>
+                            <span class="spec-tag">외국어 능통</span>
+                        </div>
+                    </div>
+
+                    <!-- 전문 분야 -->
+                    <div class="member-tab-content" id="sim-spec">
+                        <div class="spec-tags" style="margin-bottom:16px;">
+                            <span class="spec-tag">노동관계법 해석</span>
+                            <span class="spec-tag">취업규칙 작성</span>
+                            <span class="spec-tag">임금체계 분석</span>
+                            <span class="spec-tag">노동상담</span>
+                            <span class="spec-tag">외국어 자문</span>
+                        </div>
+                        <p style="font-size:0.9rem; color:var(--gray-700); line-height:1.8;">
+                            서울대학교에서 쌓은 탄탄한 이론적 기반과 한영외고에서 습득한 언어 능력을 바탕으로,
+                            외국계 기업 및 글로벌 노무 이슈에 대한 자문도 가능합니다.
+                            유정노동법률사무소의 미래를 이끌어갈 신진 전문가입니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 파트너 구성원 -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">PARTNERS & STAFF</div>
+                <h2 class="section-title">파트너 · 스텝 <span class="text-accent">구성원</span></h2>
+                <p class="section-subtitle">유정노동법률사무소를 함께 만들어가는 전문 인력들입니다</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-avatar"><i class="fas fa-user-tie"></i></div>
+                    <div class="partner-name">파트너 노무사</div>
+                    <div class="partner-title">노동분쟁 · 노동조합 전문</div>
+                    <p class="partner-spec">단체협약, 노동위원회 심판, 부당해고 등 노동분쟁 및 노동조합 관련 업무를 전담합니다.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-avatar"><i class="fas fa-user-shield"></i></div>
+                    <div class="partner-name">파트너 노무사</div>
+                    <div class="partner-title">보험사무 · 4대보험 전문</div>
+                    <p class="partner-spec">4대보험 신고, 보험사무대행, 정부지원금 신청 등 보험사무 전반을 담당합니다.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-avatar"><i class="fas fa-user-cog"></i></div>
+                    <div class="partner-name">사무 행정팀</div>
+                    <div class="partner-title">고객지원 · 행정처리</div>
+                    <p class="partner-spec">상담 예약, 서류 접수, 행정 처리 등 고객서비스를 위한 전문 행정팀이 운영됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">전문 노무사와 직접 상담하세요</h2>
+                <p class="cta-desc">경험 풍부한 공인노무사가 여러분의 노동 문제를 직접 해결합니다.</p>
+                <a href="consult.html" class="btn btn-white btn-lg">상담신청 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo"><span class="footer-logo-kr">유정노동법률사무소</span><span class="footer-logo-en">YUJUNG LABOR LAW FIRM</span></div>
+                    <p class="footer-slogan">고객과 함께 성장하는 최고의 파트너</p>
+                    <div class="footer-social">
+                        <a href="https://blog.naver.com/creator0327" target="_blank" aria-label="블로그"><i class="fas fa-blog"></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="about.html">사무소 소개</a></li>
+                        <li><a href="members.html">구성원 소개</a></li>
+                        <li><a href="services.html">업무분야</a></li>
+                        <li><a href="location.html">오시는 길</a></li>
+                        <li><a href="consult.html">상담신청</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>주요 서비스</h4>
+                    <ul>
+                        <li><a href="services.html#dispute">노동분쟁 해결</a></li>
+                        <li><a href="services.html#harassment">직장 내 괴롭힘</a></li>
+                        <li><a href="services.html#industrial">산업재해</a></li>
+                        <li><a href="services.html#wage">임금체계 컨설팅</a></li>
+                        <li><a href="services.html#safety">중대재해 예방</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>연락처</h4>
+                    <div class="footer-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 서울시 용산구 한강대로76길 11-33,<br>204호</p>
+                        <p><i class="fas fa-phone"></i> 대표 010-9846-0609</p>
+                        <p><i class="fas fa-phone"></i> 대표 010-2828-1737</p>
+                        <p><i class="fas fa-envelope"></i> doucpla@naver.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 유정노동법률사무소. All rights reserved.</p>
+                <p class="footer-reg">사업자등록번호 358-08-01603 | 대표노무사 유상건</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

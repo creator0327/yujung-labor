@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="naver-site-verification" content="dcb75a116efa452d8e3e484ec9bee3fac7b5ec1a" />
+    <title>사무소 소개 | 유정노동법률사무소</title>
+    <meta name="description" content="2020년 7월 설립. 20년 이상 현장 경력의 공인노무사가 운영하는 유정노동법률사무소. 서울 용산구 한강대로76길. 노동분쟁·직장내괴롭힘·산업재해 전문.">
+    <meta name="keywords" content="유정노동법률사무소 소개, 유상건 노무사, 신혜경 노무사, 공인노무사, 노무법인, 용산 노무사, 서울 노무사">
+    <meta name="author" content="유정노동법률사무소">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="유정노동법률사무소">
+    <meta property="og:title" content="사무소 소개 | 유정노동법률사무소">
+    <meta property="og:description" content="2020년 7월 설립. 20년 이상 현장 경력의 공인노무사가 운영하는 노동법률사무소. 120개 이상 기업 컨설팅 실적.">
+    <meta property="og:url" content="https://www.yujung-labor.com/about.html">
+    <meta property="og:image" content="images/team-photo.jpg">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- 구조화 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "유정노동법률사무소 소개",
+      "description": "2020년 7월 설립된 유정노동법률사무소의 설립 철학, 연혁, 핵심 가치를 소개합니다.",
+      "url": "https://www.yujung-labor.com/about.html",
+      "mainEntity": {
+        "@type": "LegalService",
+        "name": "유정노동법률사무소",
+        "foundingDate": "2020-07",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "한강대로76길 11-33, 204호",
+          "addressLocality": "용산구",
+          "addressRegion": "서울특별시",
+          "addressCountry": "KR"
+        }
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        /* ── ABOUT 페이지 배경 이미지 스타일 ── */
+
+        /* ── 풀폭 단체사진 소개 섹션 ── */
+        .about-intro-fullwidth {
+            padding: 0 !important;          /* 섹션 자체 패딩 제거 */
+            overflow: hidden;
+        }
+        .about-intro-fullwidth::before { display: none; } /* 장식 배경 비활성화 */
+
+        .about-intro-fw-wrap {
+            display: flex;
+            min-height: 60vh;               /* 화면 60% 이상 */
+        }
+
+        /* 왼쪽: 사진 영역 (55%) */
+        .about-fw-photo {
+            position: relative;
+            width: 55%;
+            flex-shrink: 0;
+            overflow: hidden;
+            background: #0a1929;
+        }
+        .about-fw-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;  /* 3명 모두 중앙 표시 */
+            display: block;
+        }
+        /* 사진 오른쪽 가장자리 페이드 */
+        .about-fw-photo::after {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0;
+            width: 80px;
+            background: linear-gradient(to right, transparent, var(--white));
+            pointer-events: none;
+        }
+        /* 사진 하단 뱃지 */
+        .about-fw-badge {
+            position: absolute;
+            bottom: 28px; left: 32px;
+            display: flex; align-items: center; gap: 12px;
+            background: rgba(10,36,114,0.82);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(200,150,12,0.4);
+            border-radius: 12px;
+            padding: 12px 20px;
+            color: var(--white);
+        }
+        .fw-badge-dot {
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 0 3px rgba(200,150,12,0.3);
+            flex-shrink: 0;
+            animation: pulse-dot 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { box-shadow: 0 0 0 3px rgba(200,150,12,0.3); }
+            50%       { box-shadow: 0 0 0 7px rgba(200,150,12,0.1); }
+        }
+        .fw-badge-name { font-size: 0.9rem; font-weight: 800; }
+        .fw-badge-sub  { font-size: 0.75rem; color: rgba(255,255,255,0.72); margin-top: 2px; }
+
+        /* 오른쪽: 텍스트 영역 (45%) */
+        .about-fw-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 64px 80px 56px;
+            background: var(--white);
+            position: relative; z-index: 1;
+        }
+        .about-fw-text p {
+            font-size: 0.95rem; color: var(--gray-700);
+            line-height: 1.9; margin-bottom: 16px;
+        }
+
+        /* 반응형 */
+        @media (max-width: 1024px) {
+            .about-intro-fw-wrap { flex-direction: column; min-height: auto; }
+            .about-fw-photo { width: 100%; height: 55vw; max-height: 480px; }
+            .about-fw-photo::after { display: none; }
+            .about-fw-text { padding: 56px 40px; }
+        }
+        @media (max-width: 768px) {
+            .about-fw-photo { height: 70vw; max-height: 360px; }
+            .about-fw-text { padding: 48px 24px; }
+            .fw-badge-name { font-size: 0.82rem; }
+        }
+
+        /* 1. 소개 섹션 우측 배경 장식 (::before는 위에서 비활성화) */
+        .about-intro-section {
+            position: relative; overflow: hidden;
+        }
+        .about-intro-section::before {
+            content: '';
+            position: absolute; inset: 0; z-index: 0;
+            background-image: url('images/bg-about-1.jpg');
+            background-size: cover;
+            background-position: center right;
+            opacity: 0.04;
+        }
+        .about-intro-section > .container { position: relative; z-index: 1; }
+
+        /* 2. 핵심가치: 서울 야경 위 어두운 간유 */
+        .about-values {
+            position: relative; overflow: hidden;
+        }
+        .about-values::before {
+            content: '';
+            position: absolute; inset: 0; z-index: 0;
+            background-image: url('images/bg-about-2.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.25) saturate(0.6);
+        }
+        .about-values::after {
+            content: '';
+            position: absolute; inset: 0; z-index: 1;
+            background: linear-gradient(135deg, rgba(5,14,45,0.85) 0%, rgba(10,36,114,0.80) 100%);
+        }
+        .about-values > .container { position: relative; z-index: 2; }
+        .about-values .section-tag { color: var(--accent) !important; }
+        .about-values .section-title { color: var(--white) !important; }
+        .about-values .value-card {
+            background: rgba(255,255,255,0.10) !important;
+            border: 1px solid rgba(255,255,255,0.18) !important;
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+        }
+        .about-values .value-card:hover {
+            background: rgba(255,255,255,0.18) !important;
+            border-color: var(--accent) !important;
+        }
+        .about-values .value-icon { background: rgba(200,150,12,0.18) !important; }
+        .about-values .value-icon i { color: var(--accent) !important; }
+        .about-values .value-card h3 { color: var(--white) !important; }
+        .about-values .value-card p { color: rgba(255,255,255,0.82) !important; }
+
+        /* 3. 연혁: 현대적 건물 이미지 연합 */
+        .history-section {
+            position: relative; overflow: hidden;
+        }
+        .history-section::before {
+            content: '';
+            position: absolute; inset: 0; z-index: 0;
+            background-image: url('images/bg-about-3.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.045;
+        }
+        .history-section > .container { position: relative; z-index: 1; }
+
+        /* 4. 인증/수상: 서울 야경 + 딥 오버레이 */
+        .certifications-section {
+            position: relative; overflow: hidden;
+        }
+        .certifications-section::before {
+            content: '';
+            position: absolute; inset: 0; z-index: 0;
+            background-image: url('images/bg-about-4.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.28) saturate(0.5);
+        }
+        .certifications-section::after {
+            content: '';
+            position: absolute; inset: 0; z-index: 1;
+            background: linear-gradient(160deg, rgba(5,14,45,0.88) 0%, rgba(7,24,68,0.92) 100%);
+        }
+        .certifications-section > .container { position: relative; z-index: 2; }
+        .certifications-section .cert-card {
+            background: rgba(255,255,255,0.09) !important;
+            border: 1px solid rgba(255,255,255,0.18) !important;
+            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+            transition: all 0.3s;
+        }
+        .certifications-section .cert-card:hover {
+            background: rgba(255,255,255,0.16) !important;
+            border-color: var(--accent) !important;
+            transform: translateY(-6px);
+        }
+        .certifications-section .cert-card i { color: var(--accent) !important; }
+        .certifications-section .cert-card h3 { color: var(--white) !important; font-size: 0.95rem; }
+        .certifications-section .cert-card p { color: rgba(255,255,255,0.75) !important; }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="유정노동법률사무소 로고" class="nav-logo-emblem">
+                <div class="nav-logo-text">
+                    <span class="logo-kr">유정노동법률사무소</span>
+                    <span class="logo-en-full">YUJUNG LABOR LAW FIRM</span>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" class="nav-link">사무소 소개</a></li>
+                <li><a href="members.html" class="nav-link">구성원 소개</a></li>
+                <li><a href="services.html" class="nav-link">업무분야</a></li>
+                <li><a href="location.html" class="nav-link">오시는 길</a></li>
+                <li><a href="consult.html" class="nav-link nav-cta">상담신청</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="메뉴">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 페이지 히어로 -->
+    <div class="page-hero">
+        <div class="container">
+            <div class="page-hero-tag">ABOUT US</div>
+            <h1 class="page-hero-title">사무소 소개</h1>
+            <p class="page-hero-sub">고객과 함께 성장하는 최고의 파트너, 유정노동법률사무소</p>
+            <nav class="breadcrumb">
+                <a href="index.html">홈</a>
+                <span class="separator">›</span>
+                <span class="current">사무소 소개</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 사무소 소개 본문 - 풀폭 2단 레이아웃 -->
+    <section class="about-intro-section about-intro-fullwidth">
+        <div class="about-intro-fw-wrap">
+            <!-- 왼쪽: 단체사진 (화면 절반) -->
+            <div class="about-fw-photo">
+                <img src="images/team-photo.jpg"
+                     alt="유정노동법률사무소 구성원 단체사진"
+                     loading="lazy">
+                <div class="about-fw-badge">
+                    <span class="fw-badge-dot"></span>
+                    <div>
+                        <div class="fw-badge-name">유정노동법률사무소</div>
+                        <div class="fw-badge-sub">서울시 용산구 &middot; 설립 2020년 7월</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 오른쪽: 소개 텍스트 -->
+            <div class="about-fw-text">
+                <div class="section-tag">OUR STORY</div>
+                <h2 class="section-title" style="text-align:left; margin-bottom:24px;">
+                    노동 현장의 <span class="text-accent">실전 전문가</span>들이<br>만든 사무소
+                </h2>
+                <p>안녕하세요, 고객과 함께 성장하는 <strong>유정노동법률사무소</strong>입니다. 저희 사무소는 급변하는 노동환경에 발맞추어 최고의 노무 솔루션을 제공하고 있습니다.</p>
+                <p>사업주의 입장에서 <strong>'경영이 더욱 편해지는 인사·노무관리'</strong>를 목표로, 복잡한 노동환경과 중대재해 위험으로부터 사업주가 안심하고 핵심 경영에 집중할 수 있도록 실질적인 노무관리를 전담해 드립니다.</p>
+                <p>동시에 근로자의 노동권익 보호를 위해 서울노동권익센터, 서울시 노동권리보호관, 국가인권위원회 등 공공기관에서의 자문·위원 활동을 통해 현장의 목소리를 끊임없이 듣고 반영합니다.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item"><i class="fas fa-check-circle"></i><span>공인노무사 직접 처리</span></div>
+                    <div class="highlight-item"><i class="fas fa-check-circle"></i><span>사업주 · 근로자 양측 대응</span></div>
+                    <div class="highlight-item"><i class="fas fa-check-circle"></i><span>빠른 초기 답변 시스템</span></div>
+                    <div class="highlight-item"><i class="fas fa-check-circle"></i><span>120개+ 기업 컨설팅 실적</span></div>
+                </div>
+                <a href="members.html" class="btn btn-primary" style="margin-top:32px;">
+                    구성원 소개 보기 <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 카운터 섹션 -->
+    <section class="counter-section">
+        <div class="container">
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <div><span class="counter-num" data-count="120">63</span><span class="counter-plus">+</span></div>
+                    <span class="counter-label">기업 인사노무 컨설팅</span>
+                </div>
+                <div class="counter-item">
+                    <div><span class="counter-num" data-count="50">25</span><span class="counter-plus">+</span></div>
+                    <span class="counter-label">공기업 채용 면접위원</span>
+                </div>
+                <div class="counter-item">
+                    <div><span class="counter-num" data-count="6">3</span><span class="counter-plus">권+</span></div>
+                    <span class="counter-label">전문 저서 집필</span>
+                </div>
+                <div class="counter-item">
+                    <div><span class="counter-num" data-count="20">9</span><span class="counter-plus">년+</span></div>
+                    <span class="counter-label">전문 경력</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 핵심 가치 -->
+    <section class="about-values">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">CORE VALUES</div>
+                <h2 class="section-title">유정의 <span class="text-accent">핵심 가치</span></h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card animate-card visible" data-delay="0">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>신뢰 (Trust)</h3>
+                    <p>공인노무사로서의 전문성과 윤리의식을 바탕으로, 고객이 믿고 맡길 수 있는 파트너가 되겠습니다. 모든 사건을 최선을 다해 처리하며 투명하게 소통합니다.</p>
+                </div>
+                <div class="value-card animate-card visible" data-delay="150">
+                    <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>전문성 (Expertise)</h3>
+                    <p>대기업 인사실무 20년 이상의 현장경험과 공공기관 전문위원 활동을 통해 검증된 전문성을 제공합니다. 이론이 아닌 실전 솔루션을 드립니다.</p>
+                </div>
+                <div class="value-card animate-card visible" data-delay="300">
+                    <div class="value-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3>성장 (Growth)</h3>
+                    <p>끊임없이 변화하는 노동환경에 발맞추어 지속적으로 학습하고 성장합니다. 고객과 함께 성장하는 것이 저희의 가장 큰 목표입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 연혁 -->
+    <section class="history-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">HISTORY</div>
+                <h2 class="section-title">주요 <span class="text-accent">연혁</span></h2>
+            </div>
+            <div class="timeline-full">
+                <div class="tl-item">
+                    <div class="tl-left">
+                        <div class="tl-year">2025</div>
+                    </div>
+                    <div class="tl-right">
+                        <div class="tl-content">
+                            <h4>서울노동권익센터 자문위원 위촉</h4>
+                            <p>신혜경 노무사 서울노동권익센터 자문위원 · 노동상담위원 위촉</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl-item right">
+                    <div class="tl-left">
+                        <div class="tl-content" style="text-align:right">
+                            <h4>중소기업 혁신바우처 수행기관 선정</h4>
+                            <p>경영기술전략, 중대재해예방 특화 수행기관으로 선정</p>
+                        </div>
+                    </div>
+                    <div class="tl-right">
+                        <div class="tl-year">2024</div>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-left">
+                        <div class="tl-year">2024</div>
+                    </div>
+                    <div class="tl-right">
+                        <div class="tl-content">
+                            <h4>서울시 아파트 경비노동자 노동권익 보호 안내서 집필</h4>
+                            <p>서울특별시 공식 배포 자료 집필 · 아파트 경비노동자의 권익 보호 및 고용안정을 위한 현장 실무 안내서 제작</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-left">
+                        <div class="tl-year">2023</div>
+                    </div>
+                    <div class="tl-right">
+                        <div class="tl-content">
+                            <h4>성과평가 우수 보험사무대행기관 선정</h4>
+                            <p>근로복지공단 선정 전국 상위 30개소 선정 · 서울시의회 의장 표창장 수상</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl-item right">
+                    <div class="tl-left">
+                        <div class="tl-content" style="text-align:right">
+                            <h4>서울시여성가족재단 중대재해 매뉴얼 집필</h4>
+                            <p>어린이집 중대재해 예방 및 대응 매뉴얼 집필 · 발간</p>
+                        </div>
+                    </div>
+                    <div class="tl-right">
+                        <div class="tl-year">2023</div>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-left">
+                        <div class="tl-year">2022</div>
+                    </div>
+                    <div class="tl-right">
+                        <div class="tl-content">
+                            <h4>근로복지공단 중대재해처벌법 대응매뉴얼 집필</h4>
+                            <p>직장어린이집 중대재해처벌법 대응 매뉴얼 공식 집필 · 발간</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl-item right">
+                    <div class="tl-left">
+                        <div class="tl-content" style="text-align:right">
+                            <h4>K-비대면 바우처 공급기업 선정</h4>
+                            <p>중소벤처기업부 K-비대면 서비스 플랫폼 공급기업 등록</p>
+                        </div>
+                    </div>
+                    <div class="tl-right">
+                        <div class="tl-year">2021</div>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-left">
+                        <div class="tl-year">2020</div>
+                    </div>
+                    <div class="tl-right">
+                        <div class="tl-content">
+                            <h4>우리동네 노동상담 집필 · 사무소 본격 운영</h4>
+                            <p>서울시 발간 노동상담 서적 집필, 신혜경 노무사 합류 · 보험사무대행기관 등록</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl-item right">
+                    <div class="tl-left">
+                        <div class="tl-content" style="text-align:right">
+                            <h4>유정노동법률사무소 설립</h4>
+                            <p>유상건 대표노무사 창립 · 노동분쟁, 산업재해 전문 사무소 개소 (2020년 7월)</p>
+                        </div>
+                    </div>
+                    <div class="tl-right">
+                        <div class="tl-year">2020</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 인증/수상 -->
+    <section class="certifications-section">
+        <div class="container">
+            <div class="section-header" style="text-align:center; margin-bottom:48px;">
+                <div class="section-tag">CERTIFICATIONS</div>
+                <h2 class="section-title" style="color:var(--white);">검증된 <span style="color:var(--accent-light)">인증과 수상</span></h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>근로복지공단 성과평가 우수기관</h3>
+                    <p>2023년 전국 보험사무대행기관 중 상위 30개소 선정</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-award"></i>
+                    <h3>서울특별시의회 의장 표창장</h3>
+                    <p>노동권익 향상 및 사업장 노무관리 기여 표창</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>K-비대면 바우처 공급기업</h3>
+                    <p>2021년 중소벤처기업부 비대면 서비스 공급기업 선정</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-building"></i>
+                    <h3>중소기업 혁신바우처 수행기관</h3>
+                    <p>2024년 경영기술전략 · 중대재해예방 특화기관 선정</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-star"></i>
+                    <h3>국선노무사 선정</h3>
+                    <p>중앙노동위원회 · 서울노동위원회 국선노무사 활동</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>직장 내 괴롭힘 전문위원</h3>
+                    <p>서울관악지청 직장 내 괴롭힘 판단 전문위원 위촉</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">유정과 함께 노동 문제를 해결하세요</h2>
+                <p class="cta-desc">공인노무사가 직접 상담드립니다. 사업주와 근로자 모두 환영합니다.</p>
+                <a href="consult.html" class="btn btn-white btn-lg">상담신청 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo"><span class="footer-logo-kr">유정노동법률사무소</span><span class="footer-logo-en">YUJUNG LABOR LAW FIRM</span></div>
+                    <p class="footer-slogan">고객과 함께 성장하는 최고의 파트너</p>
+                    <div class="footer-social">
+                        <a href="https://blog.naver.com/creator0327" target="_blank" aria-label="블로그"><i class="fas fa-blog"></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="about.html">사무소 소개</a></li>
+                        <li><a href="members.html">구성원 소개</a></li>
+                        <li><a href="services.html">업무분야</a></li>
+                        <li><a href="location.html">오시는 길</a></li>
+                        <li><a href="consult.html">상담신청</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>주요 서비스</h4>
+                    <ul>
+                        <li><a href="services.html#dispute">노동분쟁 해결</a></li>
+                        <li><a href="services.html#harassment">직장 내 괴롭힘</a></li>
+                        <li><a href="services.html#industrial">산업재해</a></li>
+                        <li><a href="services.html#wage">임금체계 컨설팅</a></li>
+                        <li><a href="services.html#safety">중대재해 예방</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>연락처</h4>
+                    <div class="footer-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 서울시 용산구 한강대로76길 11-33,<br>204호</p>
+                        <p><i class="fas fa-phone"></i> 대표 010-9846-0609</p>
+                        <p><i class="fas fa-phone"></i> 대표 010-2828-1737</p>
+                        <p><i class="fas fa-envelope"></i> doucpla@naver.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 유정노동법률사무소. All rights reserved.</p>
+                <p class="footer-reg">사업자등록번호 358-08-01603 | 대표노무사 유상건</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

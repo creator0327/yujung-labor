@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="naver-site-verification" content="dcb75a116efa452d8e3e484ec9bee3fac7b5ec1a" />
+    <title>오시는 길 | 유정노동법률사무소</title>
+    <meta name="description" content="유정노동법률사무소 찾아오시는 길. 서울시 용산구 한강대로76길 11-33, 204호. 4호선 숙대입구역 도보 5분, 1호선 남영역 도보 7분. 평일 09:00~18:00.">
+    <meta name="keywords" content="유정노동법률사무소 위치, 유정노동법률사무소 주소, 용산구 노무사, 숙대입구역 노무사, 남영역 노무사, 서울 노무사 찾아오는길">
+    <meta name="author" content="유정노동법률사무소">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="유정노동법률사무소">
+    <meta property="og:title" content="오시는 길 | 유정노동법률사무소">
+    <meta property="og:description" content="서울시 용산구 한강대로76길 11-33, 204호. 4호선 숙대입구역 도보 5분. 평일 09:00~18:00.">
+    <meta property="og:url" content="https://www.yujung-labor.com/location.html">
+    <meta property="og:image" content="images/team-photo.jpg">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- 구조화 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "유정노동법률사무소",
+      "url": "https://www.yujung-labor.com",
+      "telephone": ["010-9846-0609", "010-2828-1737"],
+      "email": "doucpla@naver.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "한강대로76길 11-33, 204호",
+        "addressLocality": "용산구",
+        "addressRegion": "서울특별시",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "37.5394",
+        "longitude": "126.9711"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "publicTransportClosuresInfo": "4호선 숙대입구역 도보 5분, 1호선 남영역 도보 7분"
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        /* ── 오시는 길 페이지 배경 이미지 ── */
+
+        /* 전체 location-wrap: 현대 유리빌딩 초저opacity 배경 */
+        .location-wrap {
+            padding: 80px 0 100px;
+            position: relative; overflow: hidden;
+        }
+        .location-wrap::before {
+            content: '';
+            position: absolute; inset: 0; z-index: 0;
+            background-image: url('images/bg-location-1.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.04;
+        }
+        .location-wrap > .container { position: relative; z-index: 1; }
+
+        /* nearby-section: 서울 야경 배경 + 오버레이 */
+        .nearby-section {
+            position: relative; overflow: hidden;
+            padding: 80px 0;
+        }
+        .nearby-section::before {
+            content: '';
+            position: absolute; inset: 0; z-index: 0;
+            background-image: url('images/bg-about-4.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.25) saturate(0.6);
+        }
+        .nearby-section::after {
+            content: '';
+            position: absolute; inset: 0; z-index: 1;
+            background: linear-gradient(160deg, rgba(5,14,45,0.87) 0%, rgba(10,36,114,0.82) 100%);
+        }
+        .nearby-section > .container { position: relative; z-index: 2; }
+        .nearby-section .section-tag { color: var(--accent) !important; }
+        .nearby-section .section-title { color: var(--white) !important; }
+        .nearby-section .text-accent { color: var(--accent-light) !important; }
+
+        /* nearby-card 글라스모피즘 */
+        .nearby-card {
+            background: rgba(255,255,255,0.10) !important;
+            border: 1px solid rgba(255,255,255,0.18) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .nearby-card:hover {
+            background: rgba(255,255,255,0.18) !important;
+            border-color: var(--accent) !important;
+        }
+        .nearby-card i { color: var(--accent) !important; }
+        .nearby-card h4 { color: var(--white) !important; }
+        .nearby-card p { color: rgba(255,255,255,0.75) !important; }
+
+        .location-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 64px; align-items: start; }
+
+        .location-info-card {
+            background: var(--white); border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md); overflow: hidden;
+        }
+        .location-info-header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            padding: 32px 36px; color: var(--white);
+        }
+        .location-info-header h2 { font-size: 1.4rem; font-weight: 800; margin-bottom: 8px; }
+        .location-info-header p { font-size: 0.9rem; color: rgba(255,255,255,0.75); }
+
+        .location-detail-list { padding: 32px 36px; display: flex; flex-direction: column; gap: 0; }
+        .loc-item {
+            display: flex; gap: 18px; padding: 20px 0;
+            border-bottom: 1px solid var(--gray-100);
+        }
+        .loc-item:last-child { border-bottom: none; }
+        .loc-icon {
+            width: 48px; height: 48px; border-radius: 14px;
+            background: rgba(26,58,92,0.07);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem; color: var(--primary); flex-shrink: 0;
+        }
+        .loc-text-label { font-size: 0.78rem; font-weight: 700; color: var(--gray-500); letter-spacing: 1px; margin-bottom: 5px; }
+        .loc-text-main { font-size: 0.95rem; font-weight: 600; color: var(--gray-900); line-height: 1.5; }
+        .loc-text-sub { font-size: 0.84rem; color: var(--gray-500); margin-top: 2px; }
+        .loc-text-main a { color: var(--primary); }
+        .loc-text-main a:hover { color: var(--accent); }
+
+        .consult-quick-btn {
+            margin: 0 36px 32px;
+            display: flex; gap: 12px;
+        }
+        .consult-quick-btn .btn { flex: 1; justify-content: center; font-size: 0.9rem; }
+
+        /* 지도 영역 */
+        .map-section { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); }
+        .map-container { position: relative; }
+        .map-container iframe { width: 100%; height: 440px; border: none; display: block; }
+        .map-overlay-info {
+            position: absolute; top: 16px; left: 16px;
+            background: var(--white); border-radius: var(--radius);
+            padding: 14px 18px; box-shadow: var(--shadow-md); z-index: 10;
+        }
+        .map-overlay-info .oi-name { font-size: 0.9rem; font-weight: 800; color: var(--primary-dark); }
+        .map-overlay-info .oi-addr { font-size: 0.78rem; color: var(--gray-500); margin-top: 2px; }
+
+        /* 교통안내 */
+        .transport-section { margin-top: 0; padding: 28px 36px 32px; border-top: 1px solid var(--gray-100); }
+        .transport-title { font-size: 0.95rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+        .transport-title i { color: var(--accent); }
+        .transport-list { display: flex; flex-direction: column; gap: 10px; }
+        .transport-row { display: flex; align-items: flex-start; gap: 10px; }
+        .t-badge { 
+            padding: 3px 10px; border-radius: 50px; font-size: 0.72rem; 
+            font-weight: 800; white-space: nowrap; min-width: 54px; text-align: center;
+        }
+        .t-badge.subway { background: #0052A4; color: white; }
+        .t-badge.subway2 { background: #00A84D; color: white; }
+        .t-badge.bus { background: #417505; color: white; }
+        .t-badge.bus2 { background: #E03A3E; color: white; }
+        .transport-row span { font-size: 0.86rem; color: var(--gray-700); line-height: 1.5; }
+
+        /* 주변 정보 */
+        .nearby-section { padding: 60px 0; }
+        .nearby-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .nearby-card {
+            background: var(--white); border-radius: var(--radius); padding: 28px 20px;
+            text-align: center; border: 1px solid var(--gray-200); transition: var(--transition);
+        }
+        .nearby-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .nearby-card i { font-size: 2rem; color: var(--primary); margin-bottom: 12px; display: block; }
+        .nearby-card h4 { font-size: 0.95rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 6px; }
+        .nearby-card p { font-size: 0.82rem; color: var(--gray-500); }
+
+        @media (max-width: 1024px) {
+            .location-layout { grid-template-columns: 1fr; }
+            .map-container iframe { height: 360px; }
+        }
+        @media (max-width: 480px) {
+            .location-info-header, .location-detail-list, .transport-section { padding-left: 24px; padding-right: 24px; }
+            .consult-quick-btn { margin: 0 24px 24px; }
+            .nearby-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="유정노동법률사무소 로고" class="nav-logo-emblem">
+                <div class="nav-logo-text">
+                    <span class="logo-kr">유정노동법률사무소</span>
+                    <span class="logo-en-full">YUJUNG LABOR LAW FIRM</span>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" class="nav-link">사무소 소개</a></li>
+                <li><a href="members.html" class="nav-link">구성원 소개</a></li>
+                <li><a href="services.html" class="nav-link">업무분야</a></li>
+                <li><a href="location.html" class="nav-link">오시는 길</a></li>
+                <li><a href="consult.html" class="nav-link nav-cta">상담신청</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="메뉴"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- 페이지 히어로 -->
+    <div class="page-hero">
+        <div class="container">
+            <div class="page-hero-tag">LOCATION</div>
+            <h1 class="page-hero-title">오시는 길</h1>
+            <p class="page-hero-sub">서울시 용산구 한강대로76길 11-33, 204호</p>
+            <nav class="breadcrumb">
+                <a href="index.html">홈</a>
+                <span class="separator">›</span>
+                <span class="current">오시는 길</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 지도 + 정보 -->
+    <section class="location-wrap">
+        <div class="container">
+            <div class="location-layout">
+                <!-- 왼쪽: 정보 카드 -->
+                <div class="location-info-card">
+                    <div class="location-info-header">
+                        <h2>유정노동법률사무소</h2>
+                        <p>언제든지 방문해 주세요. 사전 예약을 권장드립니다.</p>
+                    </div>
+                    <div class="location-detail-list">
+                        <div class="loc-item">
+                            <div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <div class="loc-text-label">주소</div>
+                                <div class="loc-text-main">서울시 용산구 한강대로76길 11-33,<br>204호</div>
+                                <div class="loc-text-sub">4호선 숙대입구역 · 1호선 남영역 인근</div>
+                            </div>
+                        </div>
+                        <div class="loc-item">
+                            <div class="loc-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <div class="loc-text-label">대표 연락처</div>
+                                <div class="loc-text-main">
+                                    <a href="tel:010-9846-0609">010-9846-0609</a>
+                                </div>
+                                <div class="loc-text-main" style="margin-top:4px;">
+                                    <a href="tel:010-2828-1737">010-2828-1737</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loc-item">
+                            <div class="loc-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="loc-text-label">이메일</div>
+                                <div class="loc-text-main"><a href="mailto:doucpla@naver.com">doucpla@naver.com</a></div>
+                                <div class="loc-text-sub">24시간 이내 답변 드립니다</div>
+                            </div>
+                        </div>
+                        <div class="loc-item">
+                            <div class="loc-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <div class="loc-text-label">운영시간</div>
+                                <div class="loc-text-main">평일 09:00 ~ 18:00</div>
+                                <div class="loc-text-sub">토·일·공휴일 휴무<br>긴급 상담은 전화 문의 바랍니다</div>
+                            </div>
+                        </div>
+                        <div class="loc-item">
+                            <div class="loc-icon"><i class="fas fa-parking"></i></div>
+                            <div>
+                                <div class="loc-text-label">주차 안내</div>
+                                <div class="loc-text-main">건물 내 주차 가능</div>
+                                <div class="loc-text-sub">대중교통 이용을 권장드립니다</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 교통 안내 -->
+                    <div class="transport-section">
+                        <div class="transport-title"><i class="fas fa-subway"></i> 대중교통 안내</div>
+                        <div class="transport-list">
+                            <div class="transport-row">
+                                <span class="t-badge subway">4호선</span>
+                                <span><strong>숙대입구역</strong> 하차 → 도보 약 5분</span>
+                            </div>
+                            <div class="transport-row">
+                                <span class="t-badge subway2">1호선</span>
+                                <span><strong>남영역</strong> 하차 → 도보 약 7분</span>
+                            </div>
+                            <div class="transport-row">
+                                <span class="t-badge bus">간선버스</span>
+                                <span>한강대로 인근 정류장 하차</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 빠른 버튼 -->
+                    <div class="consult-quick-btn">
+                        <a href="consult.html" class="btn btn-primary btn-sm"><i class="fas fa-comments"></i> 상담신청</a>
+                        <a href="tel:010-9846-0609" class="btn btn-outline-dark btn-sm"><i class="fas fa-phone"></i> 전화하기</a>
+                    </div>
+                </div>
+
+                <!-- 오른쪽: 지도 -->
+                <div class="map-section">
+                    <div class="map-container">
+                        <!-- 네이버 지도 임베드 (실제 배포 시 확인 필요) -->
+                        <iframe
+                            src="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C76%EA%B8%B8%2011-33"
+                            width="100%"
+                            height="440"
+                            frameborder="0"
+                            scrolling="no"
+                            marginheight="0"
+                            marginwidth="0"
+                            title="유정노동법률사무소 위치"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="map-overlay-info">
+                            <div class="oi-name">📍 유정노동법률사무소</div>
+                            <div class="oi-addr">서울시 용산구 한강대로76길 11-33, 204호</div>
+                        </div>
+                    </div>
+                    <!-- 네이버 지도 대체 링크 -->
+                    <div style="padding:16px 20px; background:var(--off-white); display:flex; gap:12px; flex-wrap:wrap;">
+                        <a href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%20%EC%9A%A9%EC%82%B0%EA%B5%AC%20%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C76%EA%B8%B8%2011-33" target="_blank" class="btn btn-primary btn-sm">
+                            <i class="fas fa-map"></i> 네이버지도에서 보기
+                        </a>
+                        <a href="https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%EC%8B%9C+%EC%9A%A9%EC%82%B0%EA%B5%AC+%ED%95%9C%EA%B0%95%EB%8C%80%EB%A1%9C76%EA%B8%B8+11-33" target="_blank" class="btn btn-outline-dark btn-sm">
+                            <i class="fas fa-map-marked-alt"></i> 카카오맵에서 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 주변 정보 -->
+    <section class="nearby-section">
+        <div class="container">
+            <div class="section-header" style="margin-bottom:40px;">
+                <div class="section-tag">NEARBY</div>
+                <h2 class="section-title">주변 <span class="text-accent">편의 정보</span></h2>
+            </div>
+            <div class="nearby-grid">
+                <div class="nearby-card">
+                    <i class="fas fa-subway"></i>
+                    <h4>지하철역</h4>
+                    <p>4호선 숙대입구역<br>1호선 남영역</p>
+                </div>
+                <div class="nearby-card">
+                    <i class="fas fa-bus"></i>
+                    <h4>버스 정류장</h4>
+                    <p>한강대로 인근<br>다수의 버스 노선 운행</p>
+                </div>
+                <div class="nearby-card">
+                    <i class="fas fa-parking"></i>
+                    <h4>주차</h4>
+                    <p>건물 내 주차 가능<br>방문 전 연락 권장</p>
+                </div>
+                <div class="nearby-card">
+                    <i class="fas fa-coffee"></i>
+                    <h4>편의시설</h4>
+                    <p>주변 카페 · 식당<br>다수 위치</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">방문 전 미리 예약해 주세요</h2>
+                <p class="cta-desc">온라인 상담신청 또는 전화로 예약하시면 대기 없이 상담 받으실 수 있습니다.</p>
+                <div class="cta-contact">
+                    <div class="cta-phone">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <span class="cta-label">대표 연락처</span>
+                            <a href="tel:010-9846-0609" class="cta-number">010-9846-0609</a>
+                            <a href="tel:010-2828-1737" class="cta-number" style="font-size:1rem;color:rgba(255,255,255,0.85);">010-2828-1737</a>
+                        </div>
+                    </div>
+                    <div class="cta-phone">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <span class="cta-label">운영시간</span>
+                            <span class="cta-number">평일 09:00 ~ 18:00</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="consult.html" class="btn btn-white btn-lg">온라인 상담신청 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo"><span class="footer-logo-kr">유정노동법률사무소</span><span class="footer-logo-en">YUJUNG LABOR LAW FIRM</span></div>
+                    <p class="footer-slogan">고객과 함께 성장하는 최고의 파트너</p>
+                    <div class="footer-social">
+                        <a href="https://blog.naver.com/creator0327" target="_blank" aria-label="블로그"><i class="fas fa-blog"></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="about.html">사무소 소개</a></li>
+                        <li><a href="members.html">구성원 소개</a></li>
+                        <li><a href="services.html">업무분야</a></li>
+                        <li><a href="location.html">오시는 길</a></li>
+                        <li><a href="consult.html">상담신청</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>주요 서비스</h4>
+                    <ul>
+                        <li><a href="services.html#dispute">노동분쟁 해결</a></li>
+                        <li><a href="services.html#harassment">직장 내 괴롭힘</a></li>
+                        <li><a href="services.html#industrial">산업재해</a></li>
+                        <li><a href="services.html#wage">임금체계 컨설팅</a></li>
+                        <li><a href="services.html#safety">중대재해 예방</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>연락처</h4>
+                    <div class="footer-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 서울시 용산구 한강대로76길 11-33,<br>204호</p>
+                        <p><i class="fas fa-phone"></i> 대표 010-9846-0609</p>
+                        <p><i class="fas fa-phone"></i> 대표 010-2828-1737</p>
+                        <p><i class="fas fa-envelope"></i> doucpla@naver.com</p>
+                        <p><i class="fas fa-clock"></i> 평일 09:00 ~ 18:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 유정노동법률사무소. All rights reserved.</p>
+                <p class="footer-reg">사업자등록번호 358-08-01603 | 대표노무사 유상건</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

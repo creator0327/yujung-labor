@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="naver-site-verification" content="dcb75a116efa452d8e3e484ec9bee3fac7b5ec1a" />
+    <title>상담신청 | 유정노동법률사무소</title>
+    <meta name="description" content="유정노동법률사무소 무료 온라인 상담신청. 노동분쟁·직장내괴롭힘·산업재해·임금체계 등 공인노무사가 직접 답변드립니다. 24시간 접수 가능.">
+    <meta name="keywords" content="노무사 상담, 노동상담 신청, 무료 노무상담, 직장내괴롭힘 상담, 부당해고 상담, 산업재해 상담, 유정노동법률사무소 상담">
+    <meta name="author" content="유정노동법률사무소">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="유정노동법률사무소">
+    <meta property="og:title" content="상담신청 | 유정노동법률사무소">
+    <meta property="og:description" content="노동분쟁·직장내괴롭힘·산업재해 등 온라인 상담신청. 공인노무사가 직접 답변드립니다. 24시간 접수 가능.">
+    <meta property="og:url" content="https://www.yujung-labor.com/consult.html">
+    <meta property="og:image" content="images/team-photo.jpg">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- 구조화 데이터 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "유정노동법률사무소 상담신청",
+      "description": "노동 관련 상담을 온라인으로 신청하세요. 공인노무사가 직접 검토 후 답변드립니다.",
+      "url": "https://www.yujung-labor.com/consult.html",
+      "mainEntity": {
+        "@type": "LegalService",
+        "name": "유정노동법률사무소",
+        "telephone": ["010-9846-0609", "010-2828-1737"],
+        "email": "doucpla@naver.com",
+        "openingHours": "Mo-Fr 09:00-18:00"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        .consult-page { padding: 80px 0 100px; background: var(--off-white); }
+        .consult-top-grid {
+            display: grid; grid-template-columns: 1fr 1.6fr; gap: 56px; align-items: start;
+        }
+
+        /* 왼쪽 안내 영역 */
+        .consult-guide h2 { font-size: 1.6rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 16px; line-height: 1.4; }
+        .consult-guide > p { font-size: 0.95rem; color: var(--gray-700); line-height: 1.8; margin-bottom: 36px; }
+
+        .guide-steps { display: flex; flex-direction: column; gap: 0; margin-bottom: 40px; }
+        .guide-step {
+            display: flex; gap: 16px; padding: 20px 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        .guide-step:last-child { border-bottom: none; }
+        .guide-step-num {
+            width: 44px; height: 44px; border-radius: 50%;
+            background: var(--primary); color: var(--white);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.9rem; font-weight: 800; flex-shrink: 0;
+        }
+        .guide-step-text strong { display: block; font-size: 0.95rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 4px; }
+        .guide-step-text p { font-size: 0.85rem; color: var(--gray-500); line-height: 1.5; }
+
+        .contact-quick-box {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            border-radius: var(--radius-lg); padding: 28px 32px; color: var(--white);
+        }
+        .contact-quick-box h4 { font-size: 1rem; font-weight: 700; margin-bottom: 20px; }
+        .quick-contact-list { display: flex; flex-direction: column; gap: 14px; }
+        .qc-item { display: flex; align-items: center; gap: 14px; }
+        .qc-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+        .qc-label { font-size: 0.75rem; color: rgba(255,255,255,0.6); margin-bottom: 2px; }
+        .qc-value { font-size: 0.95rem; font-weight: 700; }
+        .qc-value a { color: var(--white); }
+        .qc-value a:hover { color: var(--accent-light); }
+
+        /* 오른쪽 폼 영역 */
+        .consult-form-card {
+            background: var(--white); border-radius: var(--radius-lg);
+            padding: 48px 48px; box-shadow: var(--shadow-md);
+        }
+        .form-top-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(200,147,58,0.1); border: 1px solid rgba(200,147,58,0.3);
+            color: var(--accent); font-size: 0.8rem; font-weight: 700;
+            padding: 6px 14px; border-radius: 50px; margin-bottom: 16px;
+        }
+        .form-card-title { font-size: 1.4rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 6px; }
+        .form-card-sub { font-size: 0.88rem; color: var(--gray-500); margin-bottom: 36px; }
+        .form-divider { height: 1px; background: var(--gray-200); margin: 28px 0; }
+
+        .privacy-check { display: flex; align-items: flex-start; gap: 10px; margin-top: 16px; margin-bottom: 28px; }
+        .privacy-check input[type="checkbox"] { width: 18px; height: 18px; margin-top: 1px; cursor: pointer; accent-color: var(--primary); }
+        .privacy-check label { font-size: 0.85rem; color: var(--gray-700); cursor: pointer; line-height: 1.5; }
+        .privacy-check label a { color: var(--primary); font-weight: 600; text-decoration: underline; }
+
+        /* 성공 메시지 */
+        .form-success-card {
+            display: none; text-align: center; padding: 60px 20px;
+        }
+        .success-icon {
+            width: 80px; height: 80px; border-radius: 50%;
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2rem; color: var(--white); margin: 0 auto 24px;
+        }
+        .form-success-card h3 { font-size: 1.4rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 12px; }
+        .form-success-card p { font-size: 0.95rem; color: var(--gray-700); line-height: 1.8; margin-bottom: 32px; }
+        .form-success-card .success-num { font-size: 1.1rem; font-weight: 700; color: var(--primary); }
+
+        /* 자주 묻는 질문 */
+        .faq-section { padding: 80px 0; background: var(--white); }
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { border: 1px solid var(--gray-200); border-radius: var(--radius); overflow: hidden; margin-bottom: 12px; }
+        .faq-q {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 20px 24px; cursor: pointer; background: var(--white);
+            transition: var(--transition);
+        }
+        .faq-q:hover { background: var(--off-white); }
+        .faq-q.open { background: var(--primary); }
+        .faq-q-text { display: flex; align-items: center; gap: 12px; font-size: 0.95rem; font-weight: 600; color: var(--gray-900); }
+        .faq-q.open .faq-q-text { color: var(--white); }
+        .faq-q-icon { font-size: 0.75rem; color: var(--gray-500); transition: transform 0.3s; }
+        .faq-q.open .faq-q-icon { transform: rotate(180deg); color: var(--white); }
+        .faq-q-badge { padding: 3px 10px; border-radius: 50px; background: rgba(200,147,58,0.1); color: var(--accent); font-size: 0.72rem; font-weight: 700; }
+        .faq-q.open .faq-q-badge { background: rgba(255,255,255,0.2); color: rgba(255,255,255,0.9); }
+        .faq-a { display: none; padding: 20px 24px; background: var(--off-white); font-size: 0.9rem; color: var(--gray-700); line-height: 1.8; border-top: 1px solid var(--gray-200); }
+        .faq-a.open { display: block; }
+
+        @media (max-width: 1024px) {
+            .consult-top-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .consult-form-card { padding: 28px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="유정노동법률사무소 로고" class="nav-logo-emblem">
+                <div class="nav-logo-text">
+                    <span class="logo-kr">유정노동법률사무소</span>
+                    <span class="logo-en-full">YUJUNG LABOR LAW FIRM</span>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="about.html" class="nav-link">사무소 소개</a></li>
+                <li><a href="members.html" class="nav-link">구성원 소개</a></li>
+                <li><a href="services.html" class="nav-link">업무분야</a></li>
+                <li><a href="location.html" class="nav-link">오시는 길</a></li>
+                <li><a href="consult.html" class="nav-link nav-cta">상담신청</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="메뉴"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- 페이지 히어로 -->
+    <div class="page-hero">
+        <div class="container">
+            <div class="page-hero-tag">CONSULTATION</div>
+            <h1 class="page-hero-title">상담신청</h1>
+            <p class="page-hero-sub">공인노무사가 직접 상담드립니다 · 신속하고 전문적인 노무 서비스</p>
+            <nav class="breadcrumb">
+                <a href="index.html">홈</a>
+                <span class="separator">›</span>
+                <span class="current">상담신청</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 상담신청 메인 -->
+    <section class="consult-page">
+        <div class="container">
+            <div class="consult-top-grid">
+                <!-- 왼쪽: 안내 -->
+                <div class="consult-guide">
+                    <h2>노동 문제,<br>혼자 고민하지 마세요</h2>
+                    <p>어떤 노동 문제든 유정노동법률사무소 공인노무사가 직접 검토하고 답변드립니다. 사업주, 근로자 모두 상담 가능합니다.</p>
+
+                    <div class="guide-steps">
+                        <div class="guide-step">
+                            <div class="guide-step-num">01</div>
+                            <div class="guide-step-text">
+                                <strong>온라인 상담신청</strong>
+                                <p>아래 양식을 작성하여 제출해 주세요. 개인정보는 안전하게 보호됩니다.</p>
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="guide-step-num">02</div>
+                            <div class="guide-step-text">
+                                <strong>24시간 내 연락</strong>
+                                <p>접수 후 1영업일 이내에 담당 노무사가 직접 연락드립니다.</p>
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="guide-step-num">03</div>
+                            <div class="guide-step-text">
+                                <strong>전화 또는 방문 상담</strong>
+                                <p>상황에 따라 전화 상담 또는 방문 상담 일정을 잡아드립니다.</p>
+                            </div>
+                        </div>
+                        <div class="guide-step">
+                            <div class="guide-step-num">04</div>
+                            <div class="guide-step-text">
+                                <strong>전문 노무사 맞춤 솔루션 제공</strong>
+                                <p>해당 분야 전문 노무사가 최적의 해결책을 제시합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-quick-box">
+                        <h4><i class="fas fa-phone-alt" style="margin-right:8px;"></i> 즉시 연락하기</h4>
+                        <div class="quick-contact-list">
+                            <div class="qc-item">
+                                <div class="qc-icon"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <div class="qc-label">대표 연락처</div>
+                                    <div class="qc-value">
+                                        <a href="tel:010-9846-0609">010-9846-0609</a>
+                                    </div>
+                                    <div class="qc-value" style="margin-top:2px;">
+                                        <a href="tel:010-2828-1737">010-2828-1737</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="qc-item">
+                                <div class="qc-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <div class="qc-label">이메일</div>
+                                    <div class="qc-value"><a href="mailto:doucpla@naver.com">doucpla@naver.com</a></div>
+                                </div>
+                            </div>
+                            <div class="qc-item">
+                                <div class="qc-icon"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <div class="qc-label">운영시간</div>
+                                    <div class="qc-value">평일 09:00 ~ 18:00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 오른쪽: 폼 -->
+                <div class="consult-form-card">
+                    <div id="formSuccess" class="form-success-card">
+                        <div class="success-icon"><i class="fas fa-check"></i></div>
+                        <h3>상담 신청이 접수되었습니다!</h3>
+                        <p>
+                            소중한 상담 신청 감사합니다.<br>
+                            담당 노무사가 <strong>1영업일 이내</strong>에 연락드리겠습니다.<br>
+                            급하신 경우 아래 연락처로 직접 연락주세요.
+                        </p>
+                        <p class="success-num">
+                            <i class="fas fa-phone-alt"></i> 010-9846-0609 / 010-2828-1737
+                        </p>
+                        <a href="index.html" class="btn btn-primary">홈으로 돌아가기</a>
+                    </div>
+
+                    <form id="consultForm">
+                        <div class="form-top-badge"><i class="fas fa-lock"></i> 개인정보 보호 · 비밀 보장</div>
+                        <h3 class="form-card-title">상담 신청서</h3>
+                        <p class="form-card-sub">모든 내용은 엄격히 비밀이 보장됩니다. <span style="color:var(--accent)">*</span> 표시는 필수항목입니다.</p>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>성함 <span class="required">*</span></label>
+                                <input type="text" name="name" class="form-control" placeholder="홍길동" required>
+                            </div>
+                            <div class="form-group">
+                                <label>연락처 <span class="required">*</span></label>
+                                <input type="tel" name="phone" class="form-control" placeholder="010-0000-0000" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>이메일</label>
+                                <input type="email" name="email" class="form-control" placeholder="example@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label>회사명 / 기관명</label>
+                                <input type="text" name="company" class="form-control" placeholder="(주)○○○ 또는 개인">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>상담 구분 <span class="required">*</span></label>
+                            <select name="category" class="form-control" required>
+                                <option value="" disabled selected>상담 분야를 선택해 주세요</option>
+                                <option value="노동분쟁">노동분쟁 (부당해고, 임금체불 등)</option>
+                                <option value="직장내괴롭힘">직장 내 괴롭힘</option>
+                                <option value="산업재해">산업재해 (산재 신청 · 불복)</option>
+                                <option value="임금체계컨설팅">임금체계 컨설팅</option>
+                                <option value="취업규칙/인사규정">취업규칙 · 인사규정</option>
+                                <option value="중대재해예방">중대재해 예방 컨설팅</option>
+                                <option value="4대보험/보험사무">4대보험 · 보험사무</option>
+                                <option value="노무관리컨설팅">인사노무 컨설팅</option>
+                                <option value="기타">기타</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>신청인 구분 <span class="required">*</span></label>
+                            <select name="applicant_type" class="form-control" required>
+                                <option value="" disabled selected>해당 항목을 선택해 주세요</option>
+                                <option value="사업주">사업주 (기업 · 기관)</option>
+                                <option value="근로자">근로자 (개인)</option>
+                                <option value="기타">기타</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>상담 내용 <span class="required">*</span></label>
+                            <textarea name="message" class="form-control" rows="6" 
+                                placeholder="상담하실 내용을 자유롭게 작성해 주세요.&#10;예) 근무기간, 발생 경위, 원하시는 결과 등을 적어주시면 더 정확한 상담이 가능합니다." 
+                                required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>선호 상담 방법</label>
+                            <select name="prefer_method" class="form-control">
+                                <option value="전화">전화 상담 선호</option>
+                                <option value="방문">방문 상담 선호</option>
+                                <option value="이메일">이메일 답변 선호</option>
+                                <option value="상관없음">상관없음</option>
+                            </select>
+                        </div>
+
+                        <div class="form-divider"></div>
+
+                        <div class="privacy-check">
+                            <input type="checkbox" id="privacyAgree" required>
+                            <label for="privacyAgree">
+                                <strong>개인정보 수집·이용에 동의합니다.</strong><br>
+                                수집 항목: 성명, 연락처, 이메일 / 이용 목적: 상담 제공 및 답변 /
+                                보유 기간: 상담 완료 후 1년. 동의를 거부하실 수 있으나, 거부 시 상담 서비스 제공이 어렵습니다.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit" style="width:100%; justify-content:center; font-size:1.05rem; padding:16px;">
+                            <i class="fas fa-paper-plane"></i> 상담 신청하기
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">FAQ</div>
+                <h2 class="section-title">자주 묻는 <span class="text-accent">질문</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-q-text"><span class="faq-q-badge">상담</span>상담 비용은 어떻게 되나요?</div>
+                        <i class="fas fa-chevron-down faq-q-icon"></i>
+                    </div>
+                    <div class="faq-a">상담은 유료로 진행됩니다. 사건의 내용과 복잡도에 따라 상담료가 다를 수 있으니, 사전에 연락 주시면 안내해 드리겠습니다. 정식 수임 여부는 상담 이후 협의하여 결정합니다.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-q-text"><span class="faq-q-badge">상담</span>상담 신청 후 얼마나 걸려 연락이 오나요?</div>
+                        <i class="fas fa-chevron-down faq-q-icon"></i>
+                    </div>
+                    <div class="faq-a">온라인 상담 신청 후 <strong>1영업일(24시간) 이내</strong>에 담당 노무사가 직접 연락드립니다. 긴급한 사안의 경우 대표 연락처(010-9846-0609 / 010-2828-1737)로 직접 전화주시면 즉시 상담 가능합니다.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-q-text"><span class="faq-q-badge">서비스</span>사업주도 상담 받을 수 있나요?</div>
+                        <i class="fas fa-chevron-down faq-q-icon"></i>
+                    </div>
+                    <div class="faq-a">물론입니다. 유정노동법률사무소는 <strong>사업주와 근로자 모두</strong>를 위한 서비스를 제공합니다. 취업규칙 작성, 임금체계 개편, 노무관리 진단, 중대재해 예방 등 기업 측면의 인사노무 컨설팅도 적극적으로 수행하고 있습니다.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-q-text"><span class="faq-q-badge">서비스</span>직장 내 괴롭힘 사건은 어떻게 처리되나요?</div>
+                        <i class="fas fa-chevron-down faq-q-icon"></i>
+                    </div>
+                    <div class="faq-a">서울관악지청 직장 내 괴롭힘 <strong>판단 전문위원</strong>인 신혜경 노무사가 직접 담당합니다. 신고 접수, 사실조사, 조사보고서 작성, 피해자 보호조치, 징계 절차, 예방교육까지 전 과정을 지원합니다. 실제 행정기관의 판단 기준을 정확히 알고 있어 정확한 조언이 가능합니다.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-q-text"><span class="faq-q-badge">산재</span>산재 불승인을 받았는데 다시 도전할 수 있나요?</div>
+                        <i class="fas fa-chevron-down faq-q-icon"></i>
+                    </div>
+                    <div class="faq-a">네, 가능합니다. 불승인 결정에는 <strong>심사청구 → 재심사청구 → 행정소송</strong>의 불복 절차가 있습니다. 유상건 대표노무사는 현대제철 회전근개 재심사 불승인 취소, 소음성난청 행정소송 승소 등 여러 불복 사건을 성공적으로 처리한 실적이 있습니다. 포기하지 마시고 상담 신청해 주세요.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" onclick="toggleFaq(this)">
+                        <div class="faq-q-text"><span class="faq-q-badge">비용</span>수임료는 어떻게 책정되나요?</div>
+                        <i class="fas fa-chevron-down faq-q-icon"></i>
+                    </div>
+                    <div class="faq-a">사건의 종류, 난이도, 처리 기간 등을 종합적으로 고려하여 합리적으로 책정합니다. 초기 상담 시 사건을 파악한 후 예상 비용을 투명하게 안내해 드립니다. 중소기업 혁신바우처 대상 기업의 경우 정부 지원을 통해 컨설팅 비용을 절감할 수 있습니다.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 미니 -->
+    <section style="padding:60px 0; background:var(--off-white); text-align:center;">
+        <div class="container">
+            <p style="font-size:1.1rem; color:var(--gray-700); margin-bottom:20px;">아직 망설이고 계신가요? 먼저 전화로 간단히 여쭤보셔도 됩니다.</p>
+            <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+                <a href="tel:010-9846-0609" class="btn btn-primary btn-lg"><i class="fas fa-phone"></i> 010-9846-0609</a>
+                <a href="tel:010-2828-1737" class="btn btn-outline-dark btn-lg"><i class="fas fa-phone"></i> 010-2828-1737</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo"><span class="footer-logo-kr">유정노동법률사무소</span><span class="footer-logo-en">YUJUNG LABOR LAW FIRM</span></div>
+                    <p class="footer-slogan">고객과 함께 성장하는 최고의 파트너</p>
+                    <div class="footer-social">
+                        <a href="https://blog.naver.com/creator0327" target="_blank" aria-label="블로그"><i class="fas fa-blog"></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="about.html">사무소 소개</a></li>
+                        <li><a href="members.html">구성원 소개</a></li>
+                        <li><a href="services.html">업무분야</a></li>
+                        <li><a href="location.html">오시는 길</a></li>
+                        <li><a href="consult.html">상담신청</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>주요 서비스</h4>
+                    <ul>
+                        <li><a href="services.html#dispute">노동분쟁 해결</a></li>
+                        <li><a href="services.html#harassment">직장 내 괴롭힘</a></li>
+                        <li><a href="services.html#industrial">산업재해</a></li>
+                        <li><a href="services.html#wage">임금체계 컨설팅</a></li>
+                        <li><a href="services.html#safety">중대재해 예방</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>연락처</h4>
+                    <div class="footer-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 서울시 용산구 한강대로76길 11-33,<br>204호</p>
+                        <p><i class="fas fa-phone"></i> 대표 010-9846-0609</p>
+                        <p><i class="fas fa-phone"></i> 대표 010-2828-1737</p>
+                        <p><i class="fas fa-envelope"></i> doucpla@naver.com</p>
+                        <p><i class="fas fa-clock"></i> 평일 09:00 ~ 18:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 유정노동법률사무소. All rights reserved.</p>
+                <p class="footer-reg">사업자등록번호 358-08-01603 | 대표노무사 유상건</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+        function toggleFaq(el) {
+            const isOpen = el.classList.contains('open');
+            document.querySelectorAll('.faq-q').forEach(q => {
+                q.classList.remove('open');
+                q.nextElementSibling.classList.remove('open');
+            });
+            if (!isOpen) {
+                el.classList.add('open');
+                el.nextElementSibling.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색 포털 등록 가이드 | 유정노동법률사무소</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0a2472;
+            --primary-dark: #050e2d;
+            --accent: #c8960c;
+            --accent-light: #e0a910;
+            --white: #ffffff;
+            --off-white: #f4f6fb;
+            --gray-100: #f1f3f9;
+            --gray-200: #e2e8f0;
+            --gray-400: #94a3b8;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-900: #0f172a;
+            --green: #10b981;
+            --blue: #3b82f6;
+            --yellow: #f59e0b;
+            --red: #ef4444;
+            --shadow: 0 4px 24px rgba(10,36,114,0.10);
+            --radius: 14px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--off-white);
+            color: var(--gray-700);
+        }
+
+        /* ===== 헤더 ===== */
+        .guide-header {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            color: white;
+            padding: 48px 24px 40px;
+            text-align: center;
+        }
+
+        .guide-header-icon {
+            width: 72px; height: 72px;
+            background: rgba(200,150,12,0.25);
+            border: 2px solid rgba(200,150,12,0.5);
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2rem; color: var(--accent-light);
+            margin: 0 auto 20px;
+        }
+
+        .guide-header h1 {
+            font-size: 1.8rem; font-weight: 900; margin-bottom: 10px;
+        }
+
+        .guide-header p {
+            font-size: 0.95rem; color: rgba(255,255,255,0.75); max-width: 560px; margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .header-badges {
+            display: flex; justify-content: center; gap: 10px; margin-top: 20px; flex-wrap: wrap;
+        }
+
+        .h-badge {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white; font-size: 0.8rem; font-weight: 600;
+            padding: 5px 14px; border-radius: 20px;
+        }
+
+        /* ===== 진행상황 바 ===== */
+        .progress-bar-wrap {
+            background: white;
+            border-bottom: 1px solid var(--gray-200);
+            padding: 20px 24px;
+            position: sticky; top: 0; z-index: 50;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+
+        .progress-steps {
+            display: flex; align-items: center; justify-content: center;
+            gap: 0; max-width: 800px; margin: 0 auto;
+        }
+
+        .ps-item {
+            display: flex; align-items: center; gap: 8px;
+            font-size: 0.78rem; font-weight: 600; color: var(--gray-400);
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .ps-item:hover { color: var(--primary); }
+
+        .ps-item.done { color: var(--green); }
+        .ps-item.active { color: var(--primary); }
+
+        .ps-num {
+            width: 26px; height: 26px; border-radius: 50%;
+            background: var(--gray-200); color: var(--gray-400);
+            font-size: 0.75rem; font-weight: 800;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .ps-item.done .ps-num { background: var(--green); color: white; }
+        .ps-item.active .ps-num { background: var(--primary); color: white; }
+
+        .ps-arrow {
+            color: var(--gray-200); font-size: 0.7rem; margin: 0 8px; flex-shrink: 0;
+        }
+
+        @media (max-width: 700px) {
+            .ps-label { display: none; }
+            .ps-arrow { margin: 0 4px; }
+        }
+
+        /* ===== 레이아웃 ===== */
+        .guide-body {
+            max-width: 860px; margin: 0 auto; padding: 40px 24px 80px;
+        }
+
+        /* ===== SEO 완료 상태 카드 ===== */
+        .seo-done-card {
+            background: linear-gradient(135deg, rgba(16,185,129,0.08), rgba(16,185,129,0.03));
+            border: 1.5px solid rgba(16,185,129,0.3);
+            border-radius: var(--radius);
+            padding: 24px 28px;
+            margin-bottom: 36px;
+            display: flex; align-items: flex-start; gap: 18px;
+        }
+
+        .seo-done-icon {
+            width: 48px; height: 48px; background: var(--green);
+            border-radius: 12px; display: flex; align-items: center;
+            justify-content: center; font-size: 1.4rem; color: white; flex-shrink: 0;
+        }
+
+        .seo-done-text h3 { font-size: 1rem; font-weight: 800; color: #065f46; margin-bottom: 6px; }
+        .seo-done-text p { font-size: 0.88rem; color: #047857; line-height: 1.7; }
+
+        .seo-done-list {
+            margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px;
+        }
+
+        .seo-tag {
+            background: rgba(16,185,129,0.12); color: #047857;
+            font-size: 0.75rem; font-weight: 700;
+            padding: 3px 10px; border-radius: 20px;
+        }
+
+        /* ===== 섹션 제목 ===== */
+        .section-label {
+            font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+            text-transform: uppercase; color: var(--gray-400); margin-bottom: 16px;
+            display: flex; align-items: center; gap: 8px;
+        }
+
+        .section-label::after {
+            content: ''; flex: 1; height: 1px; background: var(--gray-200);
+        }
+
+        /* ===== 등록 카드 ===== */
+        .reg-card {
+            background: white; border-radius: var(--radius);
+            box-shadow: var(--shadow); margin-bottom: 24px;
+            overflow: hidden;
+        }
+
+        .reg-card-head {
+            padding: 22px 28px 18px;
+            border-bottom: 1px solid var(--gray-100);
+            display: flex; align-items: center; gap: 16px;
+        }
+
+        .reg-logo {
+            width: 44px; height: 44px; border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.3rem; font-weight: 900; flex-shrink: 0;
+        }
+
+        .reg-logo.naver  { background: #03C75A; color: white; font-size: 0.85rem; }
+        .reg-logo.google { background: white; border: 1.5px solid var(--gray-200); font-size: 1.3rem; }
+        .reg-logo.kakao  { background: #FEE500; color: #391B1B; font-size: 1.1rem; }
+        .reg-logo.daum   { background: #0068C8; color: white; font-size: 0.75rem; }
+
+        .reg-head-info { flex: 1; }
+        .reg-head-title { font-size: 1.05rem; font-weight: 800; color: var(--gray-900); margin-bottom: 3px; }
+        .reg-head-sub { font-size: 0.82rem; color: var(--gray-400); }
+
+        .priority-badge {
+            padding: 4px 12px; border-radius: 20px;
+            font-size: 0.75rem; font-weight: 800; white-space: nowrap;
+        }
+
+        .priority-badge.must  { background: rgba(239,68,68,0.1);  color: #dc2626; }
+        .priority-badge.high  { background: rgba(245,158,11,0.1);  color: #b45309; }
+        .priority-badge.rec   { background: rgba(59,130,246,0.1);  color: #1d4ed8; }
+
+        .reg-card-body { padding: 24px 28px; }
+
+        /* 단계 목록 */
+        .step-list { display: flex; flex-direction: column; gap: 14px; }
+
+        .step-item {
+            display: flex; gap: 14px; align-items: flex-start;
+        }
+
+        .step-num {
+            width: 28px; height: 28px; border-radius: 50%;
+            background: var(--primary); color: white;
+            font-size: 0.75rem; font-weight: 800;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0; margin-top: 1px;
+        }
+
+        .step-content { flex: 1; }
+
+        .step-title {
+            font-size: 0.9rem; font-weight: 700; color: var(--gray-900);
+            margin-bottom: 4px;
+        }
+
+        .step-desc {
+            font-size: 0.84rem; color: var(--gray-600); line-height: 1.7;
+        }
+
+        .step-desc strong { color: var(--primary); }
+
+        .step-tip {
+            margin-top: 8px; padding: 10px 14px;
+            background: rgba(10,36,114,0.04); border-left: 3px solid var(--primary);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.82rem; color: var(--gray-600); line-height: 1.6;
+        }
+
+        .step-tip i { color: var(--accent); margin-right: 4px; }
+
+        /* 링크 버튼 */
+        .link-btn {
+            display: inline-flex; align-items: center; gap: 7px;
+            padding: 9px 18px; border-radius: 8px;
+            font-size: 0.84rem; font-weight: 700;
+            text-decoration: none; margin-top: 14px;
+            transition: all 0.2s;
+        }
+
+        .link-btn.naver-btn  { background: #03C75A; color: white; }
+        .link-btn.naver-btn:hover  { background: #02a84b; }
+        .link-btn.google-btn { background: #4285F4; color: white; }
+        .link-btn.google-btn:hover { background: #3367d6; }
+        .link-btn.kakao-btn  { background: #FEE500; color: #391B1B; }
+        .link-btn.kakao-btn:hover  { background: #f5da00; }
+        .link-btn.daum-btn   { background: #0068C8; color: white; }
+        .link-btn.daum-btn:hover   { background: #0057a8; }
+        .link-btn.outline-btn { background: white; color: var(--primary); border: 1.5px solid var(--primary); }
+        .link-btn.outline-btn:hover { background: var(--primary); color: white; }
+
+        .link-group { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+
+        /* 정보 입력 박스 */
+        .info-box {
+            background: var(--gray-100); border-radius: 10px;
+            padding: 18px 20px; margin-top: 16px;
+        }
+
+        .info-box-title {
+            font-size: 0.8rem; font-weight: 800; color: var(--primary-dark);
+            margin-bottom: 12px; display: flex; align-items: center; gap: 6px;
+        }
+
+        .info-row {
+            display: flex; gap: 10px; margin-bottom: 8px; align-items: flex-start;
+        }
+
+        .info-row:last-child { margin-bottom: 0; }
+
+        .info-label {
+            font-size: 0.75rem; font-weight: 700; color: var(--gray-400);
+            min-width: 80px; padding-top: 1px;
+        }
+
+        .info-val {
+            font-size: 0.85rem; color: var(--gray-900); font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .copy-btn {
+            background: white; border: 1px solid var(--gray-200);
+            color: var(--gray-600); font-size: 0.72rem; font-weight: 700;
+            padding: 2px 8px; border-radius: 6px; cursor: pointer;
+            margin-left: 6px; font-family: inherit;
+            transition: all 0.2s; flex-shrink: 0;
+        }
+
+        .copy-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
+        .copy-btn.copied { background: var(--green); color: white; border-color: var(--green); }
+
+        /* ===== 타임라인 ===== */
+        .timeline-card {
+            background: white; border-radius: var(--radius);
+            box-shadow: var(--shadow); padding: 28px;
+            margin-bottom: 24px;
+        }
+
+        .timeline-title {
+            font-size: 1rem; font-weight: 800; color: var(--primary-dark);
+            margin-bottom: 20px; display: flex; align-items: center; gap: 8px;
+        }
+
+        .tl-rows { display: flex; flex-direction: column; gap: 12px; }
+
+        .tl-row {
+            display: flex; align-items: center; gap: 14px;
+            padding: 14px 16px; border-radius: 10px;
+            background: var(--gray-100);
+        }
+
+        .tl-dot {
+            width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+        }
+
+        .tl-dot.green  { background: var(--green); }
+        .tl-dot.blue   { background: var(--blue); }
+        .tl-dot.yellow { background: var(--yellow); }
+
+        .tl-week { font-size: 0.78rem; font-weight: 800; color: var(--gray-400); min-width: 90px; }
+        .tl-action { font-size: 0.88rem; color: var(--gray-700); flex: 1; }
+        .tl-result { font-size: 0.78rem; color: var(--gray-400); text-align: right; }
+
+        /* ===== 체크리스트 ===== */
+        .checklist-card {
+            background: white; border-radius: var(--radius);
+            box-shadow: var(--shadow); padding: 28px; margin-bottom: 24px;
+        }
+
+        .check-item {
+            display: flex; align-items: center; gap: 12px;
+            padding: 12px 0; border-bottom: 1px solid var(--gray-100);
+            cursor: pointer;
+        }
+
+        .check-item:last-child { border-bottom: none; }
+
+        .check-box {
+            width: 22px; height: 22px; border-radius: 6px;
+            border: 2px solid var(--gray-300, #d1d5db);
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0; transition: all 0.2s;
+            font-size: 0.8rem; color: transparent;
+        }
+
+        .check-item.checked .check-box {
+            background: var(--green); border-color: var(--green); color: white;
+        }
+
+        .check-text { font-size: 0.88rem; color: var(--gray-700); flex: 1; }
+        .check-item.checked .check-text { text-decoration: line-through; color: var(--gray-400); }
+        .check-tag { font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
+        .check-tag.auto { background: rgba(16,185,129,0.1); color: #047857; }
+        .check-tag.manual { background: rgba(245,158,11,0.1); color: #b45309; }
+
+        /* ===== 알림 박스 ===== */
+        .alert-box {
+            border-radius: 10px; padding: 16px 18px;
+            font-size: 0.86rem; line-height: 1.7;
+            display: flex; gap: 12px; align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .alert-box.info   { background: rgba(59,130,246,0.08); color: #1e40af; border: 1px solid rgba(59,130,246,0.2); }
+        .alert-box.warn   { background: rgba(245,158,11,0.08); color: #92400e; border: 1px solid rgba(245,158,11,0.2); }
+        .alert-box.tip    { background: rgba(10,36,114,0.06);  color: var(--primary-dark); border: 1px solid rgba(10,36,114,0.15); }
+
+        .alert-box i { font-size: 1rem; margin-top: 1px; flex-shrink: 0; }
+
+        /* ===== 홈으로 버튼 ===== */
+        .back-home {
+            text-align: center; margin-top: 40px;
+        }
+
+        .back-home a {
+            display: inline-flex; align-items: center; gap: 8px;
+            color: var(--gray-400); font-size: 0.85rem; text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .back-home a:hover { color: var(--primary); }
+
+        /* ===== 반응형 ===== */
+        @media (max-width: 600px) {
+            .guide-header h1 { font-size: 1.4rem; }
+            .reg-card-head, .reg-card-body { padding: 18px 20px; }
+            .step-num { width: 24px; height: 24px; font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 헤더 -->
+<div class="guide-header">
+    <div class="guide-header-icon"><i class="fas fa-search"></i></div>
+    <h1>검색 포털 등록 가이드</h1>
+    <p>홈페이지를 네이버·구글·카카오에 등록하여<br>
+    "유정노동법률사무소"를 검색하면 바로 나오도록 설정하는 방법입니다.</p>
+    <div class="header-badges">
+        <span class="h-badge"><i class="fas fa-check"></i> SEO 최적화 완료</span>
+        <span class="h-badge"><i class="fas fa-check"></i> sitemap.xml 완료</span>
+        <span class="h-badge"><i class="fas fa-check"></i> robots.txt 완료</span>
+        <span class="h-badge"><i class="fas fa-list-check"></i> 직접 등록 필요 4단계</span>
+    </div>
+</div>
+
+<!-- 진행 단계 바 -->
+<div class="progress-bar-wrap">
+    <div class="progress-steps">
+        <div class="ps-item done" onclick="scrollToSection('seo-section')">
+            <div class="ps-num"><i class="fas fa-check"></i></div>
+            <span class="ps-label">SEO 최적화</span>
+        </div>
+        <div class="ps-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="ps-item active" onclick="scrollToSection('naver-section')">
+            <div class="ps-num">1</div>
+            <span class="ps-label">네이버 플레이스</span>
+        </div>
+        <div class="ps-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="ps-item" onclick="scrollToSection('naver-search-section')">
+            <div class="ps-num">2</div>
+            <span class="ps-label">네이버 서치어드바이저</span>
+        </div>
+        <div class="ps-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="ps-item" onclick="scrollToSection('google-section')">
+            <div class="ps-num">3</div>
+            <span class="ps-label">구글</span>
+        </div>
+        <div class="ps-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="ps-item" onclick="scrollToSection('kakao-section')">
+            <div class="ps-num">4</div>
+            <span class="ps-label">카카오·다음</span>
+        </div>
+    </div>
+</div>
+
+<div class="guide-body">
+
+    <!-- SEO 완료 상태 -->
+    <div id="seo-section" class="seo-done-card">
+        <div class="seo-done-icon"><i class="fas fa-check"></i></div>
+        <div class="seo-done-text">
+            <h3>✅ 홈페이지 SEO 최적화 — 이미 완료되었습니다!</h3>
+            <p>검색엔진이 홈페이지를 잘 읽을 수 있도록 6개 페이지 모두 최적화가 완료되었습니다.<br>
+            아래 4단계 포털 등록만 직접 진행하시면 됩니다.</p>
+            <div class="seo-done-list">
+                <span class="seo-tag">📄 메타태그 (6페이지)</span>
+                <span class="seo-tag">📱 og:image 미리보기</span>
+                <span class="seo-tag">🗺 sitemap.xml</span>
+                <span class="seo-tag">🤖 robots.txt</span>
+                <span class="seo-tag">🏢 구조화 데이터 (Schema.org)</span>
+                <span class="seo-tag">🔑 키워드 최적화</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 등록 정보 (복사용) -->
+    <div class="section-label">📋 포털 등록 시 필요한 사무소 정보</div>
+
+    <div class="info-box" style="margin-bottom:32px;">
+        <div class="info-box-title"><i class="fas fa-copy" style="color:var(--accent)"></i> 아래 정보를 복사하여 각 포털에 붙여넣으세요</div>
+        <div class="info-row">
+            <span class="info-label">상호명</span>
+            <span class="info-val">유정노동법률사무소 <button class="copy-btn" onclick="copyText('유정노동법률사무소', this)">복사</button></span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">업종</span>
+            <span class="info-val">노무법인 / 공인노무사 사무소 <button class="copy-btn" onclick="copyText('노무법인 / 공인노무사 사무소', this)">복사</button></span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">주소</span>
+            <span class="info-val">서울시 용산구 한강대로76길 11-33, 204호 <button class="copy-btn" onclick="copyText('서울시 용산구 한강대로76길 11-33, 204호', this)">복사</button></span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">전화번호</span>
+            <span class="info-val">010-9846-0609 <button class="copy-btn" onclick="copyText('010-9846-0609', this)">복사</button></span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">이메일</span>
+            <span class="info-val">doucpla@naver.com <button class="copy-btn" onclick="copyText('doucpla@naver.com', this)">복사</button></span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">운영시간</span>
+            <span class="info-val">평일 09:00 ~ 18:00 (토·일·공휴일 휴무) <button class="copy-btn" onclick="copyText('평일 09:00 ~ 18:00 (토·일·공휴일 휴무)', this)">복사</button></span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">홈페이지</span>
+            <span class="info-val">https://www.yujung-labor.com <button class="copy-btn" onclick="copyText('https://www.yujung-labor.com', this)">복사</button></span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">소개 문구</span>
+            <span class="info-val" style="line-height:1.7">20년 이상 경력의 공인노무사가 노동분쟁, 직장내괴롭힘, 산업재해, 임금체계컨설팅, 중대재해예방을 직접 처리합니다. <button class="copy-btn" onclick="copyText('20년 이상 경력의 공인노무사가 노동분쟁, 직장내괴롭힘, 산업재해, 임금체계컨설팅, 중대재해예방을 직접 처리합니다.', this)">복사</button></span>
+        </div>
+    </div>
+
+
+    <!-- ====== STEP 1: 네이버 플레이스 ====== -->
+    <div class="section-label" id="naver-section">STEP 1 — 네이버 플레이스 (최우선 ⭐)</div>
+
+    <div class="alert-box info">
+        <i class="fas fa-info-circle"></i>
+        <div>한국에서 가장 중요한 등록입니다. 네이버 지도에 업체가 표시되고, "용산 노무사", "유정노동법률사무소" 검색 시 우측 정보박스에 노출됩니다.</div>
+    </div>
+
+    <div class="reg-card">
+        <div class="reg-card-head">
+            <div class="reg-logo naver">N</div>
+            <div class="reg-head-info">
+                <div class="reg-head-title">네이버 스마트플레이스 (업체 등록)</div>
+                <div class="reg-head-sub">네이버 지도 · 네이버 검색 업체 정보 노출</div>
+            </div>
+            <span class="priority-badge must">필수</span>
+        </div>
+        <div class="reg-card-body">
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <div class="step-title">네이버 계정으로 로그인</div>
+                        <div class="step-desc">사무소 명의 네이버 계정(또는 개인 계정)으로 로그인합니다.<br>
+                        블로그를 운영 중인 계정(<strong>creator0327</strong>)을 사용하시면 됩니다.</div>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <div class="step-title">스마트플레이스 접속 → "업체 등록" 클릭</div>
+                        <div class="step-desc">아래 버튼을 클릭하여 스마트플레이스로 이동하세요.</div>
+                        <a href="https://smartplace.naver.com" target="_blank" class="link-btn naver-btn">
+                            <i class="fas fa-external-link-alt"></i> 네이버 스마트플레이스 바로가기
+                        </a>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <div class="step-title">업체 정보 입력</div>
+                        <div class="step-desc">
+                            위 <strong>📋 사무소 정보 박스</strong>의 내용을 복사하여 붙여넣으세요.<br>
+                            카테고리는 <strong>"공인노무사"</strong> 또는 <strong>"노무법인"</strong>으로 선택합니다.
+                        </div>
+                        <div class="step-tip">
+                            <i class="fas fa-star"></i> <strong>사진 등록 필수!</strong> 사무소 외관, 내부, 구성원 사진을 3~5장 등록하면 노출 순위가 올라갑니다. 홈페이지의 단체사진을 활용하세요.
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <div class="step-title">사업자 인증 (선택이지만 강력 권장)</div>
+                        <div class="step-desc">사업자등록번호 <strong>358-08-01603</strong>으로 인증하면 "인증 업체" 마크가 표시되어 신뢰도가 높아집니다.</div>
+                        <div class="step-tip">
+                            <i class="fas fa-clock"></i> 등록 후 검토 기간: 약 <strong>1~3일</strong>, 네이버 지도 반영: <strong>1~2주</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ====== STEP 2: 네이버 서치어드바이저 ====== -->
+    <div class="section-label" id="naver-search-section">STEP 2 — 네이버 서치어드바이저 (웹사이트 등록)</div>
+
+    <div class="reg-card">
+        <div class="reg-card-head">
+            <div class="reg-logo naver">N</div>
+            <div class="reg-head-info">
+                <div class="reg-head-title">네이버 서치어드바이저</div>
+                <div class="reg-head-sub">홈페이지가 네이버 웹문서 검색에 노출되도록 등록</div>
+            </div>
+            <span class="priority-badge must">필수</span>
+        </div>
+        <div class="reg-card-body">
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <div class="step-title">서치어드바이저 접속 → "사이트 등록"</div>
+                        <a href="https://searchadvisor.naver.com" target="_blank" class="link-btn naver-btn">
+                            <i class="fas fa-external-link-alt"></i> 네이버 서치어드바이저 바로가기
+                        </a>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <div class="step-title">홈페이지 주소 입력</div>
+                        <div class="step-desc">사이트 URL에 <strong>https://www.yujung-labor.com</strong> 을 입력하고 소유확인을 진행합니다.</div>
+                        <div class="step-tip">
+                            <i class="fas fa-info-circle"></i> 소유 확인 방법: "HTML 파일 업로드" 방식이 가장 쉽습니다. 다운로드한 파일을 저에게 주시면 바로 적용해 드립니다!
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <div class="step-title">사이트맵 제출</div>
+                        <div class="step-desc">소유 확인 후 <strong>요청 → 사이트맵 제출</strong> 메뉴에서 아래 주소를 입력합니다.</div>
+                        <div class="info-box" style="margin-top:10px;">
+                            <div class="info-row" style="margin:0;">
+                                <span class="info-label">사이트맵 URL</span>
+                                <span class="info-val">https://www.yujung-labor.com/sitemap.xml <button class="copy-btn" onclick="copyText('https://www.yujung-labor.com/sitemap.xml', this)">복사</button></span>
+                            </div>
+                        </div>
+                        <div class="step-tip">
+                            <i class="fas fa-clock"></i> 웹문서 반영 기간: 제출 후 <strong>2~6주</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ====== STEP 3: 구글 ====== -->
+    <div class="section-label" id="google-section">STEP 3 — 구글 (Google)</div>
+
+    <div class="reg-card">
+        <div class="reg-card-head">
+            <div class="reg-logo google">G</div>
+            <div class="reg-head-info">
+                <div class="reg-head-title">구글 비즈니스 프로필 + 서치콘솔</div>
+                <div class="reg-head-sub">구글 검색·구글 지도 노출 + 사이트맵 제출</div>
+            </div>
+            <span class="priority-badge high">권장</span>
+        </div>
+        <div class="reg-card-body">
+
+            <div class="alert-box warn">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>구글 비즈니스 프로필은 <strong>구글 계정(Gmail)</strong>이 필요합니다. 없으시면 먼저 생성해 주세요.</div>
+            </div>
+
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <div class="step-title">구글 비즈니스 프로필 등록 (구글 지도 노출)</div>
+                        <div class="step-desc">구글 지도에서 "노무사", "용산 노무사" 검색 시 표시됩니다.</div>
+                        <a href="https://business.google.com" target="_blank" class="link-btn google-btn">
+                            <i class="fas fa-external-link-alt"></i> 구글 비즈니스 프로필 바로가기
+                        </a>
+                        <div class="step-tip">
+                            <i class="fas fa-info-circle"></i> "비즈니스 추가" → 업체명 입력 → 카테고리 "노무 서비스" 또는 "법률 서비스" 선택 → 주소·전화번호·운영시간 입력 → 우편엽서 인증(약 5~7일 소요)
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <div class="step-title">구글 서치콘솔 — 사이트맵 제출 (구글 검색 노출)</div>
+                        <a href="https://search.google.com/search-console" target="_blank" class="link-btn google-btn">
+                            <i class="fas fa-external-link-alt"></i> 구글 서치콘솔 바로가기
+                        </a>
+                        <div class="step-tip">
+                            <i class="fas fa-list"></i> 순서: 속성 추가 → URL 입력(https://www.yujung-labor.com) → 소유 확인 → Sitemaps 메뉴 → <strong>https://www.yujung-labor.com/sitemap.xml</strong> 제출
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ====== STEP 4: 카카오·다음 ====== -->
+    <div class="section-label" id="kakao-section">STEP 4 — 카카오맵 · 다음 검색</div>
+
+    <div class="reg-card">
+        <div class="reg-card-head">
+            <div class="reg-logo kakao">K</div>
+            <div class="reg-head-info">
+                <div class="reg-head-title">카카오맵 업체 등록 + 다음 검색 등록</div>
+                <div class="reg-head-sub">카카오맵 지도 표시 + 다음 웹문서 검색 노출</div>
+            </div>
+            <span class="priority-badge rec">보조</span>
+        </div>
+        <div class="reg-card-body">
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <div class="step-title">카카오맵 — 장소 등록 요청</div>
+                        <div class="step-desc">카카오맵에서 직접 "장소 등록 요청"을 통해 사무소를 등록합니다.</div>
+                        <a href="https://place.map.kakao.com/m/join/addplace" target="_blank" class="link-btn kakao-btn">
+                            <i class="fas fa-external-link-alt"></i> 카카오맵 장소 등록
+                        </a>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <div class="step-title">다음 검색 — 사이트 등록</div>
+                        <div class="step-desc">다음(Daum) 검색에 홈페이지가 노출되도록 등록합니다.</div>
+                        <a href="https://register.search.daum.net/index.daum" target="_blank" class="link-btn daum-btn">
+                            <i class="fas fa-external-link-alt"></i> 다음 검색 사이트 등록
+                        </a>
+                        <div class="step-tip">
+                            <i class="fas fa-info-circle"></i> "사이트 등록" → URL: https://www.yujung-labor.com 입력 → 이메일 인증 후 제출
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ====== 등록 후 노출 타임라인 ====== -->
+    <div class="section-label">⏱ 등록 후 검색 노출 예상 일정</div>
+
+    <div class="timeline-card">
+        <div class="timeline-title"><i class="fas fa-calendar-alt" style="color:var(--accent)"></i> 단계별 노출 예상 일정</div>
+        <div class="tl-rows">
+            <div class="tl-row">
+                <div class="tl-dot green"></div>
+                <div class="tl-week">등록 당일</div>
+                <div class="tl-action">SEO 최적화 완료 ✅ · 포털 등록 신청</div>
+                <div class="tl-result">즉시 완료</div>
+            </div>
+            <div class="tl-row">
+                <div class="tl-dot green"></div>
+                <div class="tl-week">1~3일 후</div>
+                <div class="tl-action">네이버 플레이스 검토 완료 → 지도에 업체 표시 시작</div>
+                <div class="tl-result">네이버 지도 노출</div>
+            </div>
+            <div class="tl-row">
+                <div class="tl-dot blue"></div>
+                <div class="tl-week">1~2주 후</div>
+                <div class="tl-action">네이버 플레이스 정식 노출 · 구글 비즈니스 우편 인증 완료</div>
+                <div class="tl-result">네이버·구글 지도</div>
+            </div>
+            <div class="tl-row">
+                <div class="tl-dot blue"></div>
+                <div class="tl-week">2~4주 후</div>
+                <div class="tl-action">구글 서치콘솔 크롤링 완료 → 구글 검색 결과 노출 시작</div>
+                <div class="tl-result">구글 웹 검색</div>
+            </div>
+            <div class="tl-row">
+                <div class="tl-dot yellow"></div>
+                <div class="tl-week">4~8주 후</div>
+                <div class="tl-action">네이버 웹문서 반영 · 다음 검색 반영 완료</div>
+                <div class="tl-result">전체 포털 노출</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ====== 체크리스트 ====== -->
+    <div class="section-label">✅ 등록 완료 체크리스트</div>
+
+    <div class="checklist-card">
+        <div class="check-item checked" onclick="toggleCheck(this)">
+            <div class="check-box"><i class="fas fa-check"></i></div>
+            <div class="check-text">홈페이지 SEO 메타태그 최적화 (6개 페이지)</div>
+            <span class="check-tag auto">자동완료</span>
+        </div>
+        <div class="check-item checked" onclick="toggleCheck(this)">
+            <div class="check-box"><i class="fas fa-check"></i></div>
+            <div class="check-text">sitemap.xml 생성</div>
+            <span class="check-tag auto">자동완료</span>
+        </div>
+        <div class="check-item checked" onclick="toggleCheck(this)">
+            <div class="check-box"><i class="fas fa-check"></i></div>
+            <div class="check-text">robots.txt 생성</div>
+            <span class="check-tag auto">자동완료</span>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><i class="fas fa-check"></i></div>
+            <div class="check-text">홈페이지 배포 (Publish 탭에서 발행)</div>
+            <span class="check-tag manual">직접 진행</span>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><i class="fas fa-check"></i></div>
+            <div class="check-text">네이버 스마트플레이스 업체 등록 신청</div>
+            <span class="check-tag manual">직접 진행</span>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><i class="fas fa-check"></i></div>
+            <div class="check-text">네이버 서치어드바이저 사이트 등록 + 사이트맵 제출</div>
+            <span class="check-tag manual">직접 진행</span>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><i class="fas fa-check"></i></div>
+            <div class="check-text">구글 비즈니스 프로필 등록 + 우편 인증</div>
+            <span class="check-tag manual">직접 진행</span>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><i class="fas fa-check"></i></div>
+            <div class="check-text">구글 서치콘솔 사이트맵 제출</div>
+            <span class="check-tag manual">직접 진행</span>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><i class="fas fa-check"></i></div>
+            <div class="check-text">카카오맵 장소 등록 요청</div>
+            <span class="check-tag manual">직접 진행</span>
+        </div>
+        <div class="check-item" onclick="toggleCheck(this)">
+            <div class="check-box"><i class="fas fa-check"></i></div>
+            <div class="check-text">다음 검색 사이트 등록</div>
+            <span class="check-tag manual">직접 진행</span>
+        </div>
+    </div>
+
+    <!-- 추가 팁 -->
+    <div class="alert-box tip">
+        <i class="fas fa-lightbulb" style="color:var(--accent)"></i>
+        <div>
+            <strong>💡 네이버 블로그 연동 팁</strong><br>
+            이미 운영 중인 네이버 블로그(blog.naver.com/creator0327)에서 홈페이지 링크를 포스팅하시면 네이버 검색 노출이 더 빨라집니다. "유정노동법률사무소 홈페이지가 오픈했습니다" 형식의 글을 올리시는 것을 권장드립니다.
+        </div>
+    </div>
+
+    <div class="back-home">
+        <a href="index.html"><i class="fas fa-arrow-left"></i> 홈페이지로 돌아가기</a>
+    </div>
+
+</div><!-- /guide-body -->
+
+<script>
+function toggleCheck(el) {
+    el.classList.toggle('checked');
+    // 로컬스토리지에 체크 상태 저장
+    saveChecks();
+}
+
+function saveChecks() {
+    const items = document.querySelectorAll('.check-item');
+    const states = Array.from(items).map(el => el.classList.contains('checked'));
+    localStorage.setItem('yjSeoChecks', JSON.stringify(states));
+}
+
+function loadChecks() {
+    const saved = localStorage.getItem('yjSeoChecks');
+    if (!saved) return;
+    const states = JSON.parse(saved);
+    const items = document.querySelectorAll('.check-item');
+    items.forEach((el, i) => {
+        if (states[i]) el.classList.add('checked');
+        else el.classList.remove('checked');
+    });
+}
+
+function copyText(text, btn) {
+    navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = '복사됨!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+            btn.textContent = '복사';
+            btn.classList.remove('copied');
+        }, 1800);
+    });
+}
+
+function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// 페이지 로드 시 체크 상태 복원
+loadChecks();
+</script>
+</body>
+</html>
