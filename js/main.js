@@ -1,3 +1,6 @@
+// 상담신청 접수 주소 (구글 Apps Script 웹앱 URL)
+const CONSULT_ENDPOINT = 'PASTE_APPS_SCRIPT_URL_HERE';
+
 // ============================
 // 유정노동법률사무소 - 메인 JS
 // ============================
@@ -252,22 +255,19 @@ document.addEventListener('DOMContentLoaded', function () {
             };
 
             try {
-                const response = await fetch('tables/consultations', {
+                // 상담 접수 → 구글 시트 저장 + 메일 알림 (Google Apps Script)
+                const response = await fetch(CONSULT_ENDPOINT, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
                 });
-
-                if (response.ok || response.status === 201) {
-                    consultForm.style.display = 'none';
-                    document.getElementById('formSuccess').style.display = 'block';
-                } else {
-                    throw new Error('서버 오류');
-                }
-            } catch (error) {
-                alert('상담 신청이 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.');
+                const result = await response.json();
+                if (!result.ok) throw new Error(result.error || '저장 실패');
                 consultForm.style.display = 'none';
                 document.getElementById('formSuccess').style.display = 'block';
+            } catch (error) {
+                alert('죄송합니다. 상담 신청 전송 중 오류가 발생했습니다.\n전화(010-2828-1737)로 연락 주시면 바로 도와드리겠습니다.');
+                btn.innerHTML = originalText;
+                btn.disabled = false;
             }
         });
     }
