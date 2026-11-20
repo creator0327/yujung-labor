@@ -1,5 +1,5 @@
 // 상담신청 접수 주소 (구글 Apps Script 웹앱 URL)
-const CONSULT_ENDPOINT = 'PASTE_APPS_SCRIPT_URL_HERE';
+const CONSULT_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwviD9gcSYYSuv_l11vrC3JgA4b7XLKclpl1WrL6Z5oCRPjR4pKKKmrFlEwN8VmxSkeIw/exec';
 
 // ============================
 // 유정노동법률사무소 - 메인 JS
